@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<meta name="theme-color" content="#2563eb" />
+<title>6ColorQR - 6色カラーコード</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%23fff'/%3E%3Crect x='16' y='16' width='40' height='40' fill='%23000'/%3E%3Crect x='72' y='16' width='40' height='40' fill='%23e11d48'/%3E%3Crect x='128' y='16' width='40' height='40' fill='%23facc15'/%3E%3Crect x='16' y='72' width='40' height='40' fill='%2316a34a'/%3E%3Crect x='72' y='72' width='40' height='40' fill='%232563eb'/%3E%3C/svg%3E" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<style>
+  :root {
+    --bg: #f8fafc;
+    --bg-scan: #ffffff;
+    --fg: #0f172a;
+    --muted: #64748b;
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --border: #e2e8f0;
+    --card: #ffffff;
+    --danger: #dc2626;
+    --success: #16a34a;
+    --radius: 12px;
+    --shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif;
+    overscroll-behavior: none;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    transition: background-color 0.2s ease;
+  }
+  body.scan-mode { background: var(--bg-scan); }
+
+  header {
+    padding: 14px 16px 8px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--fg);
+    letter-spacing: 0.5px;
+  }
+  header .sub {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* タブ */
+  .tabs {
+    display: flex;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .tab {
+    flex: 1;
+    padding: 14px 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+  }
+  .tab.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+  }
+
+  main {
+    flex: 1;
+    padding: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* フォーム */
+  textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+    color: var(--fg);
+    resize: vertical;
+    font-family: inherit;
+  }
+  textarea:focus { outline: 2px solid var(--primary); border-color: var(--primary); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.15s;
+    min-height: 44px;
+  }
+  .btn:hover, .btn:active { background: var(--primary-dark); }
+  .btn:disabled { background: #cbd5e1; cursor: not-allowed; }
+  .btn.secondary {
+    background: var(--card);
+    color: var(--fg);
+    border: 1px solid var(--border);
+  }
+  .btn.secondary:hover { background: #f1f5f9; }
+  .btn-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .card h2 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .meta {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  /* 生成キャンバス */
+  #codeCanvasWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 16px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+  }
+  #codeCanvas {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    background: #fff;
+    display: block;
+    touch-action: manipulation;
+  }
+
+  .status {
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  .status.ok { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+  .status.err { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+  .status.info { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; }
+
+  /* スキャン */
+  #scanArea {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: 480px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  #video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  #guideOverlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #guideFrame {
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    box-shadow:
+      0 0 0 9999px rgba(0,0,0,0.35),
+      0 0 12px rgba(37, 99, 235, 0.8) inset;
+    position: relative;
+  }
+  /* コーナーマーク */
+  #guideFrame::before,
+  #guideFrame::after,
+  .corner {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #facc15;
+  }
+  #guideFrame::before { top: -4px; left: -4px; border-right: none; border-bottom: none; }
+  #guideFrame::after { top: -4px; right: -4px; border-left: none; border-bottom: none; }
+  .corner.bl { bottom: -4px; left: -4px; border-right: none; border-top: none; }
+  .corner.br { bottom: -4px; right: -4px; border-left: none; border-top: none; }
+
+  #decodedText {
+    width: 100%;
+    min-height: 80px;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+
+  .scan-controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .scan-controls .btn { flex: 1; min-width: 110px; }
+
+  /* 色凡例 */
+  .legend {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .legend-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid #cbd5e1;
+  }
+
+  @media (max-width: 360px) {
+    header h1 { font-size: 16px; }
+    .tab { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>6ColorQR</h1>
+  <div class="sub">6色カラーコード生成・スキャンPWA</div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-tab="encode" role="tab">コード生成</button>
+  <button class="tab" data-tab="scan" role="tab">コードスキャン</button>
+</nav>
+
+<main>
+  <!-- ===== タブ1: 生成 ===== -->
+  <section id="panel-encode" class="panel active">
+    <div class="card">
+      <h2>テキストを入力</h2>
+      <textarea id="inputText" placeholder="ここに文字列を入力（最大約140バイト）&#10;例: Hello, 6ColorQR!"></textarea>
+      <div class="meta"><span id="byteCount">0</span> バイト / 最大 <span id="maxBytes">140</span> バイト</div>
+      <div class="btn-row">
+        <button class="btn" id="btnGenerate">カラーコード生成</button>
+        <button class="btn secondary" id="btnDownload" disabled>PNG ダウンロード</button>
+      </div>
+      <div id="encStatus"></div>
+    </div>
+
+    <div class="card">
+      <h2>生成されたコード</h2>
+      <div id="codeCanvasWrap">
+        <canvas id="codeCanvas" width="480" height="480"></canvas>
+      </div>
+      <div class="meta">画像を長押し → 保存もできます。</div>
+      <div class="legend">
+        <div class="legend-item"><span class="legend-swatch" style="background:#fff"></span>白(0)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#000"></span>黒(1)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#e11d48"></span>赤(2)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#facc15"></span>黄(3)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#16a34a"></span>緑(4)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#2563eb"></span>青(5)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== タブ2: スキャン ===== -->
+  <section id="panel-scan" class="panel">
+    <div class="card">
+      <h2>カメラでスキャン</h2>
+      <div id="scanArea">
+        <video id="video" playsinline muted autoplay></video>
+        <div id="guideOverlay">
+          <div id="guideFrame">
+            <span class="corner bl"></span>
+            <span class="corner br"></span>
+          </div>
+        </div>
+      </div>
+      <div class="scan-controls">
+        <button class="btn" id="btnStartScan">スキャン開始</button>
+        <button class="btn secondary" id="btnSwitchCam">カメラ切替</button>
+        <button class="btn secondary" id="btnStopScan">停止</button>
+      </div>
+      <div id="scanStatus"></div>
+    </div>
+
+    <div class="card">
+      <h2>デコード結果</h2>
+      <div id="decodedText">（まだ読み取られていません）</div>
+      <div class="btn-row">
+        <button class="btn secondary" id="btnCopy" disabled>コピー</button>
+        <button class="btn secondary" id="btnClear">クリア</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<canvas id="workCanvas" style="display:none"></canvas>
+
+<script>
+/* =========================================================
+ * 6ColorQR - 6色カラーコード エンコード/デコードロジック
+ * =========================================================
+ *
+ * 色割り当て（状態値 0〜5）:
+ *   0 = 白  (#FFFFFF)
+ *   1 = 黒  (#000000)
+ *   2 = 赤  (#E11D48)
+ *   3 = 黄  (#FACC15)
+ *   4 = 緑  (#16A34A)
+ *   5 = 青  (#2563EB)
+ *
+ * グリッド: 24 × 24 = 576 セル
+ *
+ * レイアウト:
+ *   [角マーカー]
+ *     (0,0)   = 黒 (1)      ←キャリブレーション基準(暗)
+ *     (23,0)  = 白 (0)      ←キャリブレーション基準(明)
+ *     (0,23)  = 赤 (2)      ←色相基準
+ *     (23,23) = 青 (5)      ←色相基準
+ *
+ *   [ヘッダー] 上端2行のうち、角マーカー以外のセル(=46セル)を
+ *     使ってバイト長(0〜255想定)を6進数3桁(=最大215)で記録する。
+ *     ※実際は先頭3セルにバイト長を6進数で書く。
+ *
+ *   [データ] 残りの全セル(角マーカー＋ヘッダーを除く)に、
+ *     1バイト = 6進数4桁 = 4セル で順番に書き込む。
+ * ========================================================= */
+
+const GRID = 24;
+const STATES = 6;
+
+// 色定義（描画用 / 判定用の基準HSV）
+const COLORS = [
+  { name: '白', rgb: [255, 255, 255], css: '#ffffff' }, // 0
+  { name: '黒', rgb: [0,   0,   0  ], css: '#000000' }, // 1
+  { name: '赤', rgb: [225, 29,  72 ], css: '#e11d48' }, // 2  Hue ~ 350
+  { name: '黄', rgb: [250, 204, 21 ], css: '#facc15' }, // 3  Hue ~ 48
+  { name: '緑', rgb: [22,  163, 74 ], css: '#16a34a' }, // 4  Hue ~ 142
+  { name: '青', rgb: [37,  99,  235], css: '#2563eb' }, // 5  Hue ~ 220
+];
+
+// 角マーカーの色（固定）
+const MARKER_TL = 1; // top-left  = 黒
+const MARKER_TR = 0; // top-right = 白
+const MARKER_BL = 2; // bottom-left = 赤
+const MARKER_BR = 5; // bottom-right = 青
+
+// マーカー座標
+function isMarker(x, y) {
+  return (x === 0 && y === 0) ||
+         (x === GRID - 1 && y === 0) ||
+         (x === 0 && y === GRID - 1) ||
+         (x === GRID - 1 && y === GRID - 1);
+}
+function markerValue(x, y) {
+  if (x === 0 && y === 0) return MARKER_TL;
+  if (x === GRID - 1 && y === 0) return MARKER_TR;
+  if (x === 0 && y === GRID - 1) return MARKER_BL;
+  if (x === GRID - 1 && y === GRID - 1) return MARKER_BR;
+  return -1;
+}
+
+// セルの走査順 (左→右, 上→下) で、マーカー以外を返す
+function* cellIterator() {
+  for (let y = 0; y < GRID; y++) {
+    for (let x = 0; x < GRID; x++) {
+      if (isMarker(x, y)) continue;
+      yield { x, y };
+    }
+  }
+}
+
+// 利用可能セル数: 576 - 4(マーカー) = 572
+// ヘッダー: 3セルでバイト数 (6進数3桁 → 最大215; 我々は140想定)
+const HEADER_CELLS = 3;
+const DATA_CELLS = GRID * GRID - 4 - HEADER_CELLS; // 569
+const MAX_BYTES = Math.floor(DATA_CELLS / 4); // 1バイト=4セル → 142
+// 安全マージンを取り 140 を上限とする
+const SAFE_MAX_BYTES = 140;
+
+// ----------------------------------------------------------
+// バイト → 6進数4桁 (LSB first) 配列に変換
+// 例: 255 = 1*216 + 1*36 + 0*6 + 3 = (255) 6進数 "1103" 
+// ----------------------------------------------------------
+function byteTo6Quad(b) {
+  // b: 0..255
+  const d0 = Math.floor(b / 216) % STATES; // 6^3
+  const d1 = Math.floor(b /  36) % STATES; // 6^2
+  const d2 = Math.floor(b /   6) % STATES; // 6^1
+  const d3 = b % STATES;                   // 6^0
+  return [d0, d1, d2, d3];
+}
+function quadToByte(q) {
+  return q[0] * 216 + q[1] * 36 + q[2] * 6 + q[3];
+}
+
+// 12bit値 → 6進数3桁 (バイト長などのメタ用、最大215)
+function numTo3(n) {
+  const d0 = Math.floor(n / 36) % STATES;
+  const d1 = Math.floor(n /  6) % STATES;
+  const d2 = n % STATES;
+  return [d0, d1, d2];
+}
+function tripleToNum(q) {
+  return q[0] * 36 + q[1] * 6 + q[2];
+}
+
+// ----------------------------------------------------------
+// エンコード: 文字列 → 24x24セルの状態値(0..5)二次元配列
+// ----------------------------------------------------------
+function encodeToGrid(text) {
+  const encoder = new TextEncoder();
+  const bytes = encoder.encode(text);
+  if (bytes.length > SAFE_MAX_BYTES) {
+    throw new Error(`バイト数が上限を超えています（${bytes.length} > ${SAFE_MAX_BYTES}）`);
+  }
+
+  // セル列を作る
+  const cells = new Array(GRID * GRID).fill(-1);
+
+  // 1) マーカー配置
+  cells[0 * GRID + 0]            = MARKER_TL;
+  cells[0 * GRID + (GRID - 1)]   = MARKER_TR;
+  cells[(GRID - 1) * GRID + 0]   = MARKER_BL;
+  cells[(GRID - 1) * GRID + (GRID - 1)] = MARKER_BR;
+
+  // 2) ヘッダー＋データ列を順序通り作る
+  const stream = [];
+  // header: 3桁でバイト長
+  const header = numTo3(bytes.length);
+  stream.push(...header);
+  // data: 各バイト → 4桁
+  for (const b of bytes) stream.push(...byteTo6Quad(b));
+  // 残りはパディング(0=白)
+  while (stream.length < DATA_CELLS + HEADER_CELLS) stream.push(0);
+
+  // 3) セル走査順に書き込む
+  let i = 0;
+  for (const { x, y } of cellIterator()) {
+    cells[y * GRID + x] = stream[i++];
+  }
+
+  // 2次元配列に変換
+  const grid = [];
+  for (let y = 0; y < GRID; y++) {
+    const row = [];
+    for (let x = 0; x < GRID; x++) row.push(cells[y * GRID + x]);
+    grid.push(row);
+  }
+  return grid;
+}
+
+// ----------------------------------------------------------
+// グリッドをCanvasに描画
+// ----------------------------------------------------------
+function drawGridToCanvas(canvas, grid, opts = {}) {
+  const margin = opts.margin ?? 24;        // 静音帯（白枠）
+  const ctx = canvas.getContext('2d');
+  const size = canvas.width;
+  const inner = size - margin * 2;
+  const cell = inner / GRID;
+
+  ctx.imageSmoothingEnabled = false;
+
+  // 背景白
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, size, size);
+
+  // セル描画
+  for (let y = 0; y < GRID; y++) {
+    for (let x = 0; x < GRID; x++) {
+      const v = grid[y][x];
+      ctx.fillStyle = COLORS[v].css;
+      // 1px重ね気味に描いて目地を埋める
+      ctx.fillRect(
+        Math.floor(margin + x * cell),
+        Math.floor(margin + y * cell),
+        Math.ceil(cell + 0.5),
+        Math.ceil(cell + 0.5)
+      );
+    }
+  }
+
+  // 角マーカーを目立たせる枠
+  ctx.strokeStyle = '#000';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(margin - 0.5, margin - 0.5, inner + 1, inner + 1);
+}
+
+// ==========================================================
+// デコード関連
+// ==========================================================
+
+// RGB → HSV ([0..360], [0..1], [0..1])
+function rgbToHsv(r, g, b) {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  const d = max - min;
+  let h = 0;
+  if (d !== 0) {
+    if (max === r) h = ((g - b) / d) % 6;
+    else if (max === g) h = (b - r) / d + 2;
+    else h = (r - g) / d + 4;
+    h *= 60;
+    if (h < 0) h += 360;
+  }
+  const s = max === 0 ? 0 : d / max;
+  const v = max;
+  return [h, s, v];
+}
+
+/**
+ * 1ピクセル(RGB)から状態値(0..5)を判定する。
+ * キャリブレーションで取得した白/黒の明度を使い、しきい値を動的に調整する。
+ *
+ * @param {number} r
+ * @param {number} g
+ * @param {number} b
+ * @param {object} cal {whiteV, blackV} 0..1
+ */
+function classifyColor(r, g, b, cal) {
+  const [h, s, v] = rgbToHsv(r, g, b);
+
+  // キャリブレーションがあれば、明度を正規化
+  const whiteV = cal?.whiteV ?? 0.95;
+  const blackV = cal?.blackV ?? 0.10;
+  const range = Math.max(0.15, whiteV - blackV);
+  const vN = Math.min(1, Math.max(0, (v - blackV) / range));
+
+  // 明度ベース: 非常に明るく彩度が低ければ白、非常に暗ければ黒
+  if (vN >= 0.78 && s < 0.30) return 0; // 白
+  // 黒判定: 明度が低ければ彩度を問わず黒と見なす (暗い場所の有彩色は事実上存在しない)
+  if (v <= 0.18) return 1;
+  if (vN <= 0.30 && s < 0.60) return 1; // 黒
+
+  // 彩度が極端に低い中間値は、明度寄りで決める
+  if (s < 0.18) {
+    return vN >= 0.55 ? 0 : 1;
+  }
+
+  // 色相で判定（中心角度との距離が最小の色を選択）
+  // 赤(350) / 黄(48) / 緑(142) / 青(220)
+  const hues = [
+    { v: 2, h: 350 },
+    { v: 3, h: 48  },
+    { v: 4, h: 142 },
+    { v: 5, h: 220 },
+  ];
+  let best = hues[0], bestD = 999;
+  for (const c of hues) {
+    let d = Math.abs(h - c.h);
+    if (d > 180) d = 360 - d;
+    if (d < bestD) { bestD = d; best = c; }
+  }
+  return best.v;
+}
+
+/**
+ * 24x24のサンプリング: video要素からガイド枠の中身を切り出して
+ * セルごとの代表色を求め、グリッド(state[][])を生成。
+ *
+ * @param {HTMLVideoElement} video
+ * @param {{x:number,y:number,w:number,h:number}} rect  videoピクセル座標上の正方形領域
+ * @returns {number[][]} 24x24
+ */
+function sampleGridFromVideo(video, rect) {
+  const work = document.getElementById('workCanvas');
+  // 内部解像度を24×N (Nは1セルあたりサンプリング数)で確保
+  const N = 8; // 1セル= 8x8ピクセルを平均化
+  const W = GRID * N;
+  work.width = W;
+  work.height = W;
+  const wctx = work.getContext('2d', { willReadFrequently: true });
+  wctx.imageSmoothingEnabled = true;
+
+  // videoから rect 部分を切り出し W×W に描画
+  wctx.drawImage(video, rect.x, rect.y, rect.w, rect.h, 0, 0, W, W);
+  const imgData = wctx.getImageData(0, 0, W, W);
+  const data = imgData.data;
+
+  // セルごとに中央付近 4x4 の平均色を取る (各セル中央)
+  const grid = [];
+  for (let gy = 0; gy < GRID; gy++) {
+    const row = [];
+    for (let gx = 0; gx < GRID; gx++) {
+      // セル中心 N/2 を中心に半径 N/4 の範囲を平均
+      const cx = gx * N + Math.floor(N / 2);
+      const cy = gy * N + Math.floor(N / 2);
+      const half = Math.max(1, Math.floor(N / 4));
+      let sr = 0, sg = 0, sb = 0, cnt = 0;
+      for (let dy = -half; dy <= half; dy++) {
+        for (let dx = -half; dx <= half; dx++) {
+          const px = cx + dx, py = cy + dy;
+          if (px < 0 || py < 0 || px >= W || py >= W) continue;
+          const idx = (py * W + px) * 4;
+          sr += data[idx];
+          sg += data[idx + 1];
+          sb += data[idx + 2];
+          cnt++;
+        }
+      }
+      row.push([sr / cnt, sg / cnt, sb / cnt]);
+    }
+    grid.push(row);
+  }
+  return grid; // 24x24 of [r,g,b]
+}
+
+/**
+ * RGBグリッドからstate(0..5)グリッドへ変換 + キャリブレーション
+ */
+function classifyGrid(rgbGrid) {
+  // キャリブレーション: 4隅マーカー (黒/白/赤/青) のV値を使う
+  const [r0,g0,b0] = rgbGrid[0][0];                 // TL = 黒
+  const [r1,g1,b1] = rgbGrid[0][GRID - 1];          // TR = 白
+  const [, , vBlack] = [...rgbToHsv(r0,g0,b0)];
+  const [, , vWhite] = [...rgbToHsv(r1,g1,b1)];
+
+  const cal = {
+    whiteV: Math.max(vWhite, vBlack + 0.2),
+    blackV: Math.min(vBlack, vWhite - 0.2),
+  };
+
+  const out = [];
+  for (let y = 0; y < GRID; y++) {
+    const row = [];
+    for (let x = 0; x < GRID; x++) {
+      const [r,g,b] = rgbGrid[y][x];
+      row.push(classifyColor(r, g, b, cal));
+    }
+    out.push(row);
+  }
+  return { grid: out, cal };
+}
+
+/**
+ * 4隅マーカーが期待通りか検証 (信頼性チェック)
+ */
+function verifyMarkers(grid) {
+  return (
+    grid[0][0] === MARKER_TL &&
+    grid[0][GRID - 1] === MARKER_TR &&
+    grid[GRID - 1][0] === MARKER_BL &&
+    grid[GRID - 1][GRID - 1] === MARKER_BR
+  );
+}
+
+/**
+ * state grid から文字列を復元
+ */
+function decodeGridToText(grid) {
+  // 1) cellIteratorと同じ順序でストリームを構築
+  const stream = [];
+  for (const { x, y } of cellIterator()) stream.push(grid[y][x]);
+
+  // 2) header3桁 = バイト長
+  const header = stream.slice(0, HEADER_CELLS);
+  const len = tripleToNum(header);
+  if (len < 0 || len > SAFE_MAX_BYTES) {
+    throw new Error(`不正なヘッダー: len=${len}`);
+  }
+
+  // 3) データ部
+  const bytes = new Uint8Array(len);
+  for (let i = 0; i < len; i++) {
+    const base = HEADER_CELLS + i * 4;
+    const q = stream.slice(base, base + 4);
+    if (q.length < 4) throw new Error('データが足りません');
+    bytes[i] = quadToByte(q);
+  }
+
+  const decoder = new TextDecoder('utf-8', { fatal: false });
+  return decoder.decode(bytes);
+}
+
+// ==========================================================
+// UI制御
+// ==========================================================
+document.addEventListener('DOMContentLoaded', () => {
+  // ---- タブ切り替え ----
+  const tabs = document.querySelectorAll('.tab');
+  const panels = {
+    encode: document.getElementById('panel-encode'),
+    scan:   document.getElementById('panel-scan'),
+  };
+  tabs.forEach(t => {
+    t.addEventListener('click', () => {
+      tabs.forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      const key = t.dataset.tab;
+      Object.entries(panels).forEach(([k, el]) => {
+        el.classList.toggle('active', k === key);
+      });
+      // スキャンタブのときは背景白(レフ板)
+      document.body.classList.toggle('scan-mode', key === 'scan');
+      // タブを抜けるときカメラ停止
+      if (key !== 'scan') stopCamera();
+    });
+  });
+
+  // ---- エンコード ----
+  const inputText = document.getElementById('inputText');
+  const byteCountEl = document.getElementById('byteCount');
+  const maxBytesEl = document.getElementById('maxBytes');
+  const codeCanvas = document.getElementById('codeCanvas');
+  const btnGenerate = document.getElementById('btnGenerate');
+  const btnDownload = document.getElementById('btnDownload');
+  const encStatus = document.getElementById('encStatus');
+  maxBytesEl.textContent = SAFE_MAX_BYTES;
+
+  function updateByteCount() {
+    const n = new TextEncoder().encode(inputText.value).length;
+    byteCountEl.textContent = n;
+    byteCountEl.style.color = n > SAFE_MAX_BYTES ? '#dc2626' : '';
+  }
+  inputText.addEventListener('input', updateByteCount);
+
+  function showStatus(el, msg, type='info') {
+    el.innerHTML = `<div class="status ${type}">${msg}</div>`;
+  }
+
+  btnGenerate.addEventListener('click', () => {
+    encStatus.innerHTML = '';
+    const text = inputText.value;
+    if (!text) {
+      showStatus(encStatus, 'テキストを入力してください', 'err');
+      return;
+    }
+    try {
+      const grid = encodeToGrid(text);
+      drawGridToCanvas(codeCanvas, grid);
+      btnDownload.disabled = false;
+      const bytes = new TextEncoder().encode(text).length;
+      showStatus(encStatus, `生成完了 (${bytes} バイト)`, 'ok');
+    } catch (err) {
+      showStatus(encStatus, err.message, 'err');
+      btnDownload.disabled = true;
+    }
+  });
+
+  btnDownload.addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.download = `6colorqr_${Date.now()}.png`;
+    link.href = codeCanvas.toDataURL('image/png');
+    link.click();
+  });
+
+  // 初期: サンプルを表示
+  inputText.value = 'Hello, 6ColorQR!';
+  updateByteCount();
+  try {
+    const g = encodeToGrid(inputText.value);
+    drawGridToCanvas(codeCanvas, g);
+    btnDownload.disabled = false;
+  } catch (_) {}
+
+  // ---- スキャン ----
+  const video = document.getElementById('video');
+  const decodedText = document.getElementById('decodedText');
+  const btnStart = document.getElementById('btnStartScan');
+  const btnStop = document.getElementById('btnStopScan');
+  const btnSwitch = document.getElementById('btnSwitchCam');
+  const btnCopy = document.getElementById('btnCopy');
+  const btnClear = document.getElementById('btnClear');
+  const scanStatus = document.getElementById('scanStatus');
+  const guideFrame = document.getElementById('guideFrame');
+  const scanArea = document.getElementById('scanArea');
+
+  let stream = null;
+  let scanning = false;
+  let scanTimer = null;
+  let currentFacing = 'environment';
+  let lastDecoded = '';
+
+  async function startCamera() {
+    stopCamera();
+    try {
+      const constraints = {
+        audio: false,
+        video: {
+          facingMode: { ideal: currentFacing },
+          width:  { ideal: 1280 },
+          height: { ideal: 1280 },
+        }
+      };
+      stream = await navigator.mediaDevices.getUserMedia(constraints);
+      video.srcObject = stream;
+      await video.play();
+      scanning = true;
+      scheduleScan();
+      showStatus(scanStatus, 'スキャン中… ガイド枠にコードを合わせてください', 'info');
+    } catch (err) {
+      console.error(err);
+      showStatus(scanStatus, 'カメラの起動に失敗しました: ' + err.message, 'err');
+    }
+  }
+  function stopCamera() {
+    scanning = false;
+    if (scanTimer) { clearTimeout(scanTimer); scanTimer = null; }
+    if (stream) {
+      stream.getTracks().forEach(t => t.stop());
+      stream = null;
+    }
+    video.srcObject = null;
+  }
+
+  /**
+   * video要素の表示領域とガイド枠との関係から、
+   * video の元解像度における「ガイド枠に対応する正方形」の座標を計算する。
+   * video は object-fit: cover で表示されている。
+   */
+  function computeSampleRect() {
+    const vw = video.videoWidth;
+    const vh = video.videoHeight;
+    if (!vw || !vh) return null;
+
+    const scanRect = scanArea.getBoundingClientRect();
+    const guideRect = guideFrame.getBoundingClientRect();
+
+    // object-fit: cover での実描画スケール
+    const containerAspect = scanRect.width / scanRect.height;
+    const videoAspect = vw / vh;
+    let drawW, drawH, offX, offY;
+    if (videoAspect > containerAspect) {
+      // 横にあふれる → 高さフィット
+      drawH = scanRect.height;
+      drawW = drawH * videoAspect;
+      offX = (scanRect.width - drawW) / 2;
+      offY = 0;
+    } else {
+      drawW = scanRect.width;
+      drawH = drawW / videoAspect;
+      offX = 0;
+      offY = (scanRect.height - drawH) / 2;
+    }
+    // ガイド枠 (scanArea 内座標)
+    const gx = guideRect.left - scanRect.left;
+    const gy = guideRect.top  - scanRect.top;
+    const gw = guideRect.width;
+    const gh = guideRect.height;
+
+    // 表示座標 → video元座標 への変換
+    const scaleX = vw / drawW;
+    const scaleY = vh / drawH;
+    const sx = (gx - offX) * scaleX;
+    const sy = (gy - offY) * scaleY;
+    const sw = gw * scaleX;
+    const sh = gh * scaleY;
+
+    // 正方形に寄せる
+    const side = Math.min(sw, sh);
+    return {
+      x: Math.max(0, Math.min(vw - side, sx + (sw - side) / 2)),
+      y: Math.max(0, Math.min(vh - side, sy + (sh - side) / 2)),
+      w: side,
+      h: side,
+    };
+  }
+
+  function scheduleScan() {
+    if (!scanning) return;
+    scanTimer = setTimeout(() => {
+      try { tryScanOnce(); } catch (e) { console.warn(e); }
+      scheduleScan();
+    }, 250); // 4 fps
+  }
+
+  function tryScanOnce() {
+    if (!video.videoWidth) return;
+    const rect = computeSampleRect();
+    if (!rect) return;
+    const rgbGrid = sampleGridFromVideo(video, rect);
+    const { grid } = classifyGrid(rgbGrid);
+
+    if (!verifyMarkers(grid)) {
+      // マーカー不一致は失敗扱い、UIに軽く表示
+      return;
+    }
+    try {
+      const text = decodeGridToText(grid);
+      if (text && text !== lastDecoded) {
+        lastDecoded = text;
+        decodedText.textContent = text;
+        btnCopy.disabled = false;
+        showStatus(scanStatus, 'デコード成功！', 'ok');
+        // 軽いバイブ
+        if (navigator.vibrate) navigator.vibrate(60);
+      }
+    } catch (err) {
+      // デコード失敗は静かに無視（次フレームへ）
+    }
+  }
+
+  btnStart.addEventListener('click', startCamera);
+  btnStop.addEventListener('click', () => {
+    stopCamera();
+    showStatus(scanStatus, '停止しました', 'info');
+  });
+  btnSwitch.addEventListener('click', async () => {
+    currentFacing = currentFacing === 'environment' ? 'user' : 'environment';
+    if (stream) await startCamera();
+  });
+
+  btnCopy.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(decodedText.textContent);
+      showStatus(scanStatus, 'コピーしました', 'ok');
+    } catch {
+      showStatus(scanStatus, 'コピーに失敗しました', 'err');
+    }
+  });
+  btnClear.addEventListener('click', () => {
+    decodedText.textContent = '（まだ読み取られていません）';
+    lastDecoded = '';
+    btnCopy.disabled = true;
+  });
+
+  // ページ離脱時にカメラ停止
+  window.addEventListener('pagehide', stopCamera);
+  window.addEventListener('beforeunload', stopCamera);
+});
+
+// ---- Service Worker 登録 ----
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch((err) => {
+      console.warn('SW registration failed:', err);
+    });
+  });
+}
+</script>
+</body>
+</html>
