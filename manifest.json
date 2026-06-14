@@ -1,0 +1,26 @@
+{
+  "name": "6ColorQR",
+  "short_name": "6ColorQR",
+  "description": "6色カラーコードの生成とカメラ読み取りができるPWAアプリ",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%23ffffff'/%3E%3Crect x='16' y='16' width='40' height='40' fill='%23000000'/%3E%3Crect x='72' y='16' width='40' height='40' fill='%23e11d48'/%3E%3Crect x='128' y='16' width='40' height='40' fill='%23facc15'/%3E%3Crect x='16' y='72' width='40' height='40' fill='%2316a34a'/%3E%3Crect x='72' y='72' width='40' height='40' fill='%232563eb'/%3E%3Crect x='128' y='72' width='40' height='40' fill='%23ffffff' stroke='%23000' stroke-width='2'/%3E%3Crect x='16' y='128' width='40' height='40' fill='%23facc15'/%3E%3Crect x='72' y='128' width='40' height='40' fill='%232563eb'/%3E%3Crect x='128' y='128' width='40' height='40' fill='%23e11d48'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23ffffff'/%3E%3Crect x='40' y='40' width='112' height='112' fill='%23000000'/%3E%3Crect x='200' y='40' width='112' height='112' fill='%23e11d48'/%3E%3Crect x='360' y='40' width='112' height='112' fill='%23facc15'/%3E%3Crect x='40' y='200' width='112' height='112' fill='%2316a34a'/%3E%3Crect x='200' y='200' width='112' height='112' fill='%232563eb'/%3E%3Crect x='360' y='200' width='112' height='112' fill='%23ffffff' stroke='%23000' stroke-width='4'/%3E%3Crect x='40' y='360' width='112' height='112' fill='%23facc15'/%3E%3Crect x='200' y='360' width='112' height='112' fill='%232563eb'/%3E%3Crect x='360' y='360' width='112' height='112' fill='%23e11d48'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
