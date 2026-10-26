@@ -134,6 +134,12 @@
   .debug-row .label { font-size: 11px; color: var(--muted); }
 
   @media (max-width: 360px) { header h1 { font-size: 16px; } .tab { font-size: 13px; } }
+  .feature-switch { display:flex;gap:6px;padding:10px 16px;background:#fff;justify-content:center;border-bottom:1px solid var(--border); }
+  .feature-switch button { flex:1;max-width:240px;min-height:44px;padding:10px 8px;border:1px solid var(--border);border-radius:9px;background:#fff;color:var(--muted);font:inherit;font-size:13px;cursor:pointer; }
+  .feature-switch button[aria-pressed="true"] { background:#eff6ff;border-color:var(--primary);color:var(--primary-dark);font-weight:600; }
+  #artFeature { width:100%;max-width:900px;margin:0 auto; }
+  #artFeature iframe { display:block;width:100%;height:1200px;border:0; }
+  [hidden] { display:none!important; }
 </style>
 </head>
 <body>
@@ -143,12 +149,17 @@
   <div class="sub">6色カラーコード生成・スキャンPWA</div>
 </header>
 
-<nav class="tabs" role="tablist">
+<div class="feature-switch" role="group" aria-label="使う機能">
+  <button id="colorFeatureButton" aria-pressed="true" aria-controls="colorMain">6ColorQR</button>
+  <button id="artFeatureButton" aria-pressed="false" aria-controls="artFeature">絵のメッセージ〈実験〉</button>
+</div>
+
+<nav id="colorTabs" class="tabs" role="tablist">
   <button class="tab active" data-tab="encode" role="tab">コード生成</button>
   <button class="tab" data-tab="scan" role="tab">コードスキャン</button>
 </nav>
 
-<main>
+<main id="colorMain">
   <!-- タブ1: 生成 -->
   <section id="panel-encode" class="panel active">
     <div class="card">
@@ -220,6 +231,9 @@
     </div>
   </section>
 </main>
+<section id="artFeature" hidden aria-label="絵のメッセージ">
+  <iframe id="artFrame" title="絵のメッセージの送受信" allow="camera; fullscreen" data-src="art.html"></iframe>
+</section>
 
 <canvas id="workCanvas" style="display:none"></canvas>
 
@@ -549,6 +563,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let lastDecoded = null;
   let debugMode = false;
   let frameCount = 0;
+  let cameraGeneration = 0;
   const confirmation = ColorQRScanner.createConfirmation(2);
   let lastVideoTime = -1;
 
@@ -564,6 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function startCamera() {
     stopCamera();
+    const generation = cameraGeneration;
     try {
       // できるだけ高解像度＆連続オートフォーカス
       const constraints = {
@@ -576,19 +592,28 @@ document.addEventListener('DOMContentLoaded', () => {
           focusMode: 'continuous',
         }
       };
-      stream = await navigator.mediaDevices.getUserMedia(constraints);
+      const incoming = await navigator.mediaDevices.getUserMedia(constraints);
+      if (generation !== cameraGeneration) {
+        incoming.getTracks().forEach(t => t.stop());
+        return;
+      }
+      stream = incoming;
       video.srcObject = stream;
       await video.play();
+      if (generation !== cameraGeneration) return;
       // 露出/フォーカスの自動制御は基本ブラウザ側に任せる
       scanning = true;
       scheduleScan();
       showStatus(scanStatus, '📷 カメラ起動中… 緑枠にコードを合わせてください', 'info');
     } catch (err) {
+      if (generation !== cameraGeneration) return;
+      stopCamera();
       console.error(err);
       showStatus(scanStatus, '❌ カメラ起動失敗: ' + err.message, 'err');
     }
   }
   function stopCamera() {
+    cameraGeneration++;
     confirmation.reset();
     ColorQRScanner.reset();
     lastVideoTime = -1;
@@ -786,6 +811,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   window.addEventListener('pagehide', stopCamera);
+  window.addEventListener('colorqr-suspend', stopCamera);
   window.addEventListener('beforeunload', stopCamera);
 });
 
@@ -798,5 +824,6 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 <script src="scanner.js"></script>
+<script src="feature-mode.js"></script>
 </body>
 </html>

@@ -13,7 +13,8 @@
     "benchmark:v2": "node tests/benchmark.cjs improved-v2",
     "results": "node tests/summarize.cjs",
     "gallery": "node tests/gallery.cjs",
-    "test:display": "node tests/display.cjs after"
+    "test:display": "node tests/display.cjs after",
+    "test:art": "node tests/art-message.cjs"
   },
   "repository": {
     "type": "git",
