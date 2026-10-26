@@ -1,0 +1,32 @@
+{
+  "name": "colorqrcode",
+  "version": "1.0.0",
+  "description": "> 6色カラーコードの生成とカメラでのリアルタイム読み取りができる、オフライン動作対応のPWAアプリ",
+  "main": "sw.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node tests/regression.cjs",
+    "benchmark:baseline": "node tests/benchmark.cjs baseline",
+    "benchmark:improved": "node tests/benchmark.cjs improved",
+    "benchmark:v2": "node tests/benchmark.cjs improved-v2",
+    "results": "node tests/summarize.cjs",
+    "gallery": "node tests/gallery.cjs",
+    "test:display": "node tests/display.cjs after"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmtshn/ColorQRcode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmtshn/ColorQRcode/issues"
+  },
+  "homepage": "https://github.com/kmtshn/ColorQRcode#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}

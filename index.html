@@ -159,6 +159,7 @@
         <button class="btn" id="btnGenerate">カラーコード生成</button>
         <button class="btn secondary" id="btnDownload" disabled>PNG ダウンロード</button>
       </div>
+      <div class="meta">新形式 CRC-32：読み取り側も更新してください。旧形式の読み取りにも対応しています。</div>
       <div id="encStatus"></div>
     </div>
 
@@ -223,20 +224,9 @@
 <canvas id="workCanvas" style="display:none"></canvas>
 
 <script>
-/* =========================================================
- * 6ColorQR v2 - 読み取り精度を大幅強化したバージョン
- * =========================================================
- *
- * 設計変更点（v1→v2）:
- *  - グリッドを 24x24 から 16x16 に変更（1セルがより大きく確実）
- *  - 4隅に 2x2 のファインダーパターンを配置（位置検出に使う）
- *  - ファインダー自動探索: ガイド枠内を ±5% ずつシフトして
- *    マーカーが見つかる位置を多点サンプリングして探索
- *  - 1セルから複数点(3x3)を取得し、多数決＋平均でロバスト化
- *  - HSV判定の彩度しきい値を大幅に緩和（カメラの実映像対応）
- *  - データ部にバイト単位のチェックサム（パリティ）を埋め込み
- *  - 連続Nフレーム同じ結果が出たときのみ確定（誤読防止）
- * ========================================================= */
+/* 6ColorQR: legacy 16x16 format + versioned CRC32 payloads.
+ * Frame detection and projective sampling: scanner.js.
+ * CRC detects corruption; it does not authenticate or correct data. */
 
 const GRID = 16;
 const STATES = 6;
@@ -282,15 +272,8 @@ function* cellIterator() {
   }
 }
 
-// セル数の計算
-// 全セル: 16*16 = 256
-// ファインダー: 4*4 = 16
-// データ可用: 240セル
-// ヘッダー: 3セル (バイト長 6進数3桁 = 最大215)
-// 残り: 237セル → 1バイト=4セル+1チェックセル=5セル の塊で → 47バイト
-// より効率を上げる: 1バイト=4セルのみ、1ブロック(8バイト=32セル)に1セルのパリティ
-// シンプル優先: 1バイト=4セル、上限を控えめに設定
-// ヘッダー: 3セル(バイト長) + 4セル(XOR チェックサム) = 7セル
+// 256 cells - 16 finders = 240 stream cells.
+// 7 header cells + 4 per payload byte + 16 CRC cells (v2 only).
 const HEADER_LEN_CELLS = 3;
 const HEADER_CHK_CELLS = 4;
 const HEADER_CELLS = HEADER_LEN_CELLS + HEADER_CHK_CELLS; // 7
@@ -330,12 +313,22 @@ function tripleToNum(q) {
 function computeChecksum(bytes) {
   let c = bytes.length & 0xff;
   for (const b of bytes) c ^= b;
-  // さらに位置依存の撹拌で「全色同色フレーム」が偶然受理されないように
+  // Fixed mask; XOR is order-independent and is not an error correction code.
   c ^= 0xa5;
   return c & 0xff;
 }
 
-function encodeToGrid(text) {
+// CRC-32/ISO-HDLC, including version and length. Detects errors; does not repair.
+function computeCRC32(bytes) {
+  let crc = 0xffffffff;
+  for (const b of [2, bytes.length, ...bytes]) {
+    crc ^= b;
+    for (let bit = 0; bit < 8; bit++) crc = (crc >>> 1) ^ ((crc & 1) ? 0xedb88320 : 0);
+  }
+  return (crc ^ 0xffffffff) >>> 0;
+}
+
+function encodeToGrid(text, options = {}) {
   const bytes = new TextEncoder().encode(text);
   if (bytes.length > SAFE_MAX_BYTES) {
     throw new Error(`バイト数が上限を超えています（${bytes.length} > ${SAFE_MAX_BYTES}）`);
@@ -351,9 +344,13 @@ function encodeToGrid(text) {
 
   // ヘッダー(3桁長 + 4桁チェックサム) + データ
   const stream = [];
-  stream.push(...numTo3(bytes.length));            // 3セル
+  stream.push(...numTo3(bytes.length + (options.legacy ? 0 : 64)));
   stream.push(...byteTo6Quad(computeChecksum(bytes))); // 4セル
   for (const b of bytes) stream.push(...byteTo6Quad(b));
+  if (!options.legacy) {
+    const crc = computeCRC32(bytes);
+    for (const shift of [24, 16, 8, 0]) stream.push(...byteTo6Quad((crc >>> shift) & 255));
+  }
   while (stream.length < DATA_CELLS_TOTAL + HEADER_CELLS) stream.push(0);
 
   let i = 0;
@@ -405,239 +402,18 @@ function drawGridToCanvas(canvas, grid, opts = {}) {
 // デコード関連
 // ==========================================================
 
-function rgbToHsv(r, g, b) {
-  r /= 255; g /= 255; b /= 255;
-  const max = Math.max(r, g, b), min = Math.min(r, g, b);
-  const d = max - min;
-  let h = 0;
-  if (d !== 0) {
-    if (max === r) h = ((g - b) / d) % 6;
-    else if (max === g) h = (b - r) / d + 2;
-    else h = (r - g) / d + 4;
-    h *= 60; if (h < 0) h += 360;
-  }
-  return [h, max === 0 ? 0 : d / max, max];
-}
-
-/**
- * 単一RGBから色判定 (カメラ向けに大幅緩和されたしきい値)
- */
-function classifyColor(r, g, b, cal) {
-  const [h, s, v] = rgbToHsv(r, g, b);
-  const whiteV = cal?.whiteV ?? 0.90;
-  const blackV = cal?.blackV ?? 0.15;
-  const range = Math.max(0.15, whiteV - blackV);
-  const vN = Math.min(1.2, Math.max(-0.1, (v - blackV) / range));
-
-  // 1) 強い白判定: 正規化明度が高く、彩度が低い
-  if (vN >= 0.70 && s < 0.35) return 0;
-
-  // 2) 強い黒判定: 絶対明度が低い OR 正規化明度が低く彩度も低い
-  if (v <= 0.22) return 1;
-  if (vN <= 0.30 && s < 0.45) return 1;
-
-  // 3) 彩度がかなり低い場合は明度で
-  if (s < 0.20) return vN >= 0.55 ? 0 : 1;
-
-  // 4) 色相判定（中心距離の最小値）
-  // 各色の中心角度をやや調整
-  const hues = [
-    { v: 2, h: 350, hueRange: 50 },  // 赤: 300〜40付近
-    { v: 3, h: 50,  hueRange: 35 },  // 黄: 30〜85
-    { v: 4, h: 140, hueRange: 60 },  // 緑: 80〜200
-    { v: 5, h: 220, hueRange: 55 },  // 青: 195〜290
-  ];
-  let best = hues[0], bestD = 999;
-  for (const c of hues) {
-    let d = Math.abs(h - c.h);
-    if (d > 180) d = 360 - d;
-    if (d < bestD) { bestD = d; best = c; }
-  }
-  return best.v;
-}
-
-/**
- * 1セル内の複数点をサンプリングして多数決
- */
-function classifyCellMulti(samples, cal) {
-  const votes = [0, 0, 0, 0, 0, 0];
-  for (const [r, g, b] of samples) {
-    const v = classifyColor(r, g, b, cal);
-    votes[v]++;
-  }
-  let bestV = 0, bestC = -1;
-  for (let i = 0; i < 6; i++) {
-    if (votes[i] > bestC) { bestC = votes[i]; bestV = i; }
-  }
-  return bestV;
-}
-
-/**
- * video の rect 領域を切り出し、GRID×GRID のセルごとに
- * 中心付近の複数点RGBを返す
- */
-function sampleCellsFromVideo(video, rect) {
-  const work = document.getElementById('workCanvas');
-  const N = 10; // 1セルあたり N×N ピクセル
-  const W = GRID * N;
-  work.width = W; work.height = W;
-  const wctx = work.getContext('2d', { willReadFrequently: true });
-  wctx.imageSmoothingEnabled = true;
-  wctx.drawImage(video, rect.x, rect.y, rect.w, rect.h, 0, 0, W, W);
-  const data = wctx.getImageData(0, 0, W, W).data;
-
-  // 各セルの中心3x3を平均、さらに3x3の各点からRGBを取り「複数サンプル」とする
-  const cells = []; // cells[y][x] = { samples: [[r,g,b]...] }
-  for (let gy = 0; gy < GRID; gy++) {
-    const row = [];
-    for (let gx = 0; gx < GRID; gx++) {
-      const cx = gx * N + Math.floor(N / 2);
-      const cy = gy * N + Math.floor(N / 2);
-      // 9点サンプル (中心 + 8近傍を 2px間隔で)
-      const offsets = [
-        [0, 0], [-2, 0], [2, 0], [0, -2], [0, 2],
-        [-2, -2], [2, -2], [-2, 2], [2, 2],
-      ];
-      const samples = [];
-      for (const [dx, dy] of offsets) {
-        const px = cx + dx, py = cy + dy;
-        if (px < 0 || py < 0 || px >= W || py >= W) continue;
-        const idx = (py * W + px) * 4;
-        samples.push([data[idx], data[idx + 1], data[idx + 2]]);
-      }
-      row.push(samples);
-    }
-    cells.push(row);
-  }
-  return { cells, workCanvas: work, sampleSize: W };
-}
-
-/**
- * 1セルの代表色を計算（平均RGB）
- */
-function avgRGB(samples) {
-  let r = 0, g = 0, b = 0;
-  for (const s of samples) { r += s[0]; g += s[1]; b += s[2]; }
-  const n = samples.length;
-  return [r / n, g / n, b / n];
-}
-
-/**
- * ファインダー検証スコア（4隅 2x2 ＝ 16セルのうち、何セルが期待通りか）
- */
-function finderScore(grid) {
-  let ok = 0, total = 16;
-  for (let y = 0; y < GRID; y++) {
-    for (let x = 0; x < GRID; x++) {
-      if (!isFinder(x, y)) continue;
-      if (grid[y][x] === finderValue(x, y)) ok++;
-    }
-  }
-  return { ok, total };
-}
-
-/**
- * ガイド枠領域を粗→細の2段階で探索し、ファインダースコア最大の rect を返す
- * Step1: 大きく動かす(±12%, スケール 0.80〜1.20) 粗探索
- * Step2: 上位候補の周辺を細かく探索(±3%)
- */
-function evaluateRect(video, rect) {
-  if (rect.x < 0 || rect.y < 0 ||
-      rect.x + rect.w > video.videoWidth ||
-      rect.y + rect.h > video.videoHeight) return null;
-  const { cells } = sampleCellsFromVideo(video, rect);
-  const { grid, cal } = classifyAll(cells);
-  const sc = finderScore(grid).ok;
-  return { rect, score: sc, grid, cal, cells };
-}
-
-function searchBestRect(video, baseRect) {
-  // Step 1: 粗探索 (5x5x5 = 125点)
-  const shifts1 = [-0.12, -0.06, 0, 0.06, 0.12];
-  const scales1 = [0.80, 0.90, 1.00, 1.10, 1.20];
-  let best = { rect: baseRect, score: -1, grid: null, cal: null };
-  for (const sc of scales1) {
-    for (const dx of shifts1) {
-      for (const dy of shifts1) {
-        const w = baseRect.w * sc, h = baseRect.h * sc;
-        const x = baseRect.x + baseRect.w * dx + (baseRect.w - w) / 2;
-        const y = baseRect.y + baseRect.h * dy + (baseRect.h - h) / 2;
-        const r = evaluateRect(video, { x, y, w, h });
-        if (r && r.score > best.score) {
-          best = r;
-          if (r.score === 16) return r;
-        }
-      }
-    }
-  }
-
-  // Step 2: 細探索 (best 周辺 ±3%、±1%)
-  if (best.score >= 6) {
-    const shifts2 = [-0.04, -0.02, 0, 0.02, 0.04];
-    const scales2 = [0.96, 0.98, 1.00, 1.02, 1.04];
-    const cx = best.rect.x + best.rect.w / 2;
-    const cy = best.rect.y + best.rect.h / 2;
-    for (const sc of scales2) {
-      for (const dx of shifts2) {
-        for (const dy of shifts2) {
-          const w = best.rect.w * sc, h = best.rect.h * sc;
-          const x = cx - w / 2 + best.rect.w * dx;
-          const y = cy - h / 2 + best.rect.h * dy;
-          const r = evaluateRect(video, { x, y, w, h });
-          if (r && r.score > best.score) {
-            best = r;
-            if (r.score === 16) return r;
-          }
-        }
-      }
-    }
-  }
-  return best;
-}
-
-/**
- * 全セルを分類してgrid化（キャリブレーション込み）
- */
-function classifyAll(cells) {
-  // キャリブレーション: TL(黒) と TR(白) の代表色から V を取る
-  // 2x2のファインダー領域から平均を取って安定化
-  const blackSamples = [];
-  const whiteSamples = [];
-  const F = FINDER_SIZE;
-  for (let y = 0; y < F; y++) {
-    for (let x = 0; x < F; x++) {
-      blackSamples.push(...cells[y][x]);                  // TL
-      whiteSamples.push(...cells[y][GRID - 1 - x]);       // TR
-    }
-  }
-  const [br, bg, bb] = avgRGB(blackSamples);
-  const [wr, wg, wb] = avgRGB(whiteSamples);
-  const vBlack = rgbToHsv(br, bg, bb)[2];
-  const vWhite = rgbToHsv(wr, wg, wb)[2];
-  const cal = {
-    whiteV: Math.max(vWhite, vBlack + 0.25),
-    blackV: Math.min(vBlack, vWhite - 0.25),
-  };
-
-  const grid = [];
-  for (let y = 0; y < GRID; y++) {
-    const row = [];
-    for (let x = 0; x < GRID; x++) {
-      row.push(classifyCellMulti(cells[y][x], cal));
-    }
-    grid.push(row);
-  }
-  return { grid, cal };
-}
-
-/**
- * state grid から文字列を復元 (チェックサム検証付き)
- */
+// Legacy encoding is retained. Frame detection is implemented in scanner.js.
 function decodeGridToText(grid) {
+  if (!Array.isArray(grid) || grid.length !== GRID || grid.some(row =>
+    !Array.isArray(row) || row.length !== GRID || row.some(v => !Number.isInteger(v) || v < 0 || v >= STATES))) {
+    throw new Error('不正なグリッド');
+  }
   const stream = [];
   for (const { x, y } of cellIterator()) stream.push(grid[y][x]);
 
-  const len = tripleToNum(stream.slice(0, HEADER_LEN_CELLS));
+  const tag = tripleToNum(stream.slice(0, HEADER_LEN_CELLS));
+  const v2 = tag >= 64 && tag <= 64 + SAFE_MAX_BYTES;
+  const len = v2 ? tag - 64 : tag;
   if (len < 0 || len > SAFE_MAX_BYTES) {
     throw new Error(`不正な長さ: ${len}`);
   }
@@ -648,8 +424,23 @@ function decodeGridToText(grid) {
     const base = HEADER_CELLS + i * 4;
     const q = stream.slice(base, base + 4);
     if (q.length < 4) throw new Error('データ不足');
-    bytes[i] = quadToByte(q);
+    const value = quadToByte(q);
+    if (value > 255) throw new Error('不正なバイト値');
+    bytes[i] = value;
   }
+  if (chkExpected > 255) throw new Error('不正なチェックサム値');
+  let end = HEADER_CELLS + len * 4;
+  if (v2) {
+    let expected = 0;
+    for (let i = 0; i < 4; i++) {
+      const value = quadToByte(stream.slice(end, end + 4));
+      if (value > 255) throw new Error('不正なCRC値');
+      expected = (expected * 256 + value) >>> 0;
+      end += 4;
+    }
+    if (expected !== computeCRC32(bytes)) throw new Error('CRC-32不一致');
+  }
+  if (stream.slice(end).some(v => v !== 0)) throw new Error('パディング不一致');
 
   const chkActual = computeChecksum(bytes);
   if (chkActual !== chkExpected) {
@@ -755,10 +546,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let scanning = false;
   let scanTimer = null;
   let currentFacing = 'environment';
-  let lastDecoded = '';
-  let recentResults = []; // 直近Nフレームの結果
+  let lastDecoded = null;
   let debugMode = false;
   let frameCount = 0;
+  const confirmation = ColorQRScanner.createConfirmation(2);
+  let lastVideoTime = -1;
 
   btnDebug.addEventListener('click', () => {
     debugMode = !debugMode;
@@ -789,7 +581,6 @@ document.addEventListener('DOMContentLoaded', () => {
       await video.play();
       // 露出/フォーカスの自動制御は基本ブラウザ側に任せる
       scanning = true;
-      recentResults = [];
       scheduleScan();
       showStatus(scanStatus, '📷 カメラ起動中… 緑枠にコードを合わせてください', 'info');
     } catch (err) {
@@ -798,6 +589,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   function stopCamera() {
+    confirmation.reset();
+    ColorQRScanner.reset();
+    lastVideoTime = -1;
     scanning = false;
     if (scanTimer) { clearTimeout(scanTimer); scanTimer = null; }
     if (stream) { stream.getTracks().forEach(t => t.stop()); stream = null; }
@@ -852,7 +646,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 200); // 5 fps
   }
 
-  function drawDebug(rect, grid, score) {
+  function drawDebug(rect, grid, score, corners) {
     if (!debugMode) return;
     // overlay canvas は scanArea サイズに合わせる
     const scanRect = scanArea.getBoundingClientRect();
@@ -879,24 +673,20 @@ document.addEventListener('DOMContentLoaded', () => {
       drawW = scanRect.width; drawH = drawW / videoAspect;
       offX = 0; offY = (scanRect.height - drawH) / 2;
     }
-    const sx = rect.x / vw * drawW + offX;
-    const sy = rect.y / vh * drawH + offY;
-    const sw = rect.w / vw * drawW;
-    const sh = rect.h / vh * drawH;
-    const cellW = sw / GRID;
-    const cellH = sh / GRID;
-    for (let y = 0; y < GRID; y++) {
-      for (let x = 0; x < GRID; x++) {
-        dctx.fillStyle = COLORS[grid[y][x]].css;
-        dctx.globalAlpha = 0.55;
-        dctx.fillRect(sx + x * cellW + cellW * 0.3, sy + y * cellH + cellH * 0.3, cellW * 0.4, cellH * 0.4);
-        dctx.globalAlpha = 1;
-      }
-    }
-    // 探索枠を黄色で描画
+    if (!corners) return;
     dctx.strokeStyle = '#facc15';
     dctx.lineWidth = 2;
-    dctx.strokeRect(sx, sy, sw, sh);
+    dctx.beginPath();
+    corners.forEach((p, i) => {
+      const x = p.x / vw * drawW + offX, y = p.y / vh * drawH + offY;
+      if (i === 0) dctx.moveTo(x, y); else dctx.lineTo(x, y);
+    });
+    dctx.closePath(); dctx.stroke();
+    corners.forEach((p, i) => {
+      const x = p.x / vw * drawW + offX, y = p.y / vh * drawH + offY;
+      dctx.fillStyle = '#facc15'; dctx.fillRect(x - 3, y - 3, 6, 6);
+      dctx.fillText(String(i + 1), x + 5, y - 5);
+    });
   }
 
   function drawPreview(grid) {
@@ -920,28 +710,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const baseRect = computeBaseRect();
     if (!baseRect) return;
 
-    const best = searchBestRect(video, baseRect);
-    if (!best.grid) return;
+    if (video.currentTime === lastVideoTime) return;
+    lastVideoTime = video.currentTime;
+    const best = ColorQRScanner.scan(video, baseRect);
+    const confirmed = confirmation.update(best);
+    if (!best.grid) {
+      guideFrame.classList.remove('locked');
+      drawDebug(null, null, 0, null);
+      if (debugMode) showStatus(scanStatus, `${best.reason}・${best.ms.toFixed(1)}ms`, 'info');
+      else if (frameCount % 6 === 0) showStatus(scanStatus, 'コードを探しています。四隅を入れて、少し離してピントを合わせてください。', 'info');
+      return;
+    }
 
     const { grid, rect, score } = best;
-    drawDebug(rect, grid, score);
+    drawDebug(rect, grid, score, best.corners);
     drawPreview(grid);
 
-    // チェックサム機構があるため、finder>=12 程度から試行する
-    // チェックサムが通れば誤読確率は 1/256 以下
-    if (score >= 12) {
+    if (debugMode) showStatus(scanStatus, `${score}/16・${best.checksum}・${best.ms.toFixed(1)}ms・候補${best.candidates}・${best.reason || '確認中'}`, 'info');
+    if (best.text !== null && best.text !== undefined) {
       try {
-        const text = decodeGridToText(grid);
-        // チェックサム通過 = ほぼ確実に正しい
+        const text = best.text;
+        if (!confirmed) {
+          guideFrame.classList.remove('locked');
+          if (!debugMode) showStatus(scanStatus, 'コードを確認中…そのまま保持してください', 'info');
+          return;
+        }
         guideFrame.classList.add('locked');
         if (text !== lastDecoded) {
           lastDecoded = text;
           decodedText.textContent = text;
           btnCopy.disabled = false;
-          showStatus(scanStatus, `✅ 読み取り成功 (マーカー ${score}/16・CRC OK)`, 'ok');
+          showStatus(scanStatus, `✅ 読み取り成功 (マーカー ${score}/16・${best.format === 'v2-crc32' ? 'CRC-32' : '旧形式 XOR'} OK・2フレーム確認)`, 'ok');
           if (navigator.vibrate) navigator.vibrate(80);
         }
-        recentResults = [];
       } catch (err) {
         guideFrame.classList.remove('locked');
         if (frameCount % 4 === 0) {
@@ -953,7 +754,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       guideFrame.classList.remove('locked');
-      if (frameCount % 6 === 0) {
+      if (!debugMode && frameCount % 6 === 0) {
         showStatus(scanStatus, `🔍 探索中… (マーカー ${score}/16) 明るく・正面から・ピントを合わせて`, 'info');
       }
     }
@@ -978,8 +779,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   btnClear.addEventListener('click', () => {
     decodedText.textContent = '（まだ読み取られていません）';
-    lastDecoded = '';
-    recentResults = [];
+    lastDecoded = null;
+    confirmation.reset();
+    ColorQRScanner.reset();
     btnCopy.disabled = true;
   });
 
@@ -995,5 +797,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
+<script src="scanner.js"></script>
 </body>
 </html>

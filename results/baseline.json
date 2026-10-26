@@ -1,0 +1,4259 @@
+{
+  "rows": [
+    {
+      "text": "A",
+      "condition": "plain",
+      "split": "development",
+      "index": 0,
+      "ms": 436.60000002384186,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "left",
+      "split": "development",
+      "index": 1,
+      "ms": 57,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.2,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "right",
+      "split": "development",
+      "index": 2,
+      "ms": 83.5,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.8,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "up",
+      "split": "development",
+      "index": 3,
+      "ms": 78.19999992847443,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.2,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "down",
+      "split": "development",
+      "index": 4,
+      "ms": 71.70000004768372,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.8,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "small",
+      "split": "development",
+      "index": 5,
+      "ms": 15,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "large",
+      "split": "development",
+      "index": 6,
+      "ms": 96.80000007152557,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 56,
+        "y": 56,
+        "w": 288,
+        "h": 288
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 7,
+      "ms": 227.10000002384186,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 120.8,
+        "y": 77.6,
+        "w": 216,
+        "h": 216
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 8,
+      "ms": 213.30000007152557,
+      "decoded": null,
+      "error": "チェックサム不一致 (a7 != d8)",
+      "score": 12,
+      "rect": {
+        "x": 118.89920000000002,
+        "y": 83.9936,
+        "w": 211.50719999999998,
+        "h": 211.50719999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 9,
+      "ms": 190.5,
+      "decoded": null,
+      "error": "チェックサム不一致 (ca != 4e)",
+      "score": 12,
+      "rect": {
+        "x": 87.67999999999999,
+        "y": 83.18719999999999,
+        "w": 233.62560000000002,
+        "h": 233.62560000000002
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 10,
+      "ms": 180.5,
+      "decoded": null,
+      "error": "チェックサム不一致 (41 != 104)",
+      "score": 12,
+      "rect": {
+        "x": 64.16,
+        "y": 73.28,
+        "w": 253.44,
+        "h": 253.44
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 11,
+      "ms": 183,
+      "decoded": null,
+      "error": "チェックサム不一致 (a5 != 0)",
+      "score": 12,
+      "rect": {
+        "x": 65.60000000000001,
+        "y": 104.00000000000001,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 12,
+      "ms": 220.39999997615814,
+      "decoded": null,
+      "error": "チェックサム不一致 (aa != 0)",
+      "score": 12,
+      "rect": {
+        "x": 51.2,
+        "y": 108.8,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "perspective",
+      "split": "development",
+      "index": 13,
+      "ms": 178.69999992847443,
+      "decoded": null,
+      "error": "チェックサム不一致 (49 != 24)",
+      "score": 14,
+      "rect": {
+        "x": 63.19999999999999,
+        "y": 72.8,
+        "w": 244.8,
+        "h": 244.8
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "blur",
+      "split": "development",
+      "index": 14,
+      "ms": 89,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "noise",
+      "split": "development",
+      "index": 15,
+      "ms": 48.10000002384186,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "dark",
+      "split": "development",
+      "index": 16,
+      "ms": 49.700000047683716,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "cast",
+      "split": "development",
+      "index": 17,
+      "ms": 50.5,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "saturation",
+      "split": "development",
+      "index": 18,
+      "ms": 52,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "hue",
+      "split": "development",
+      "index": 19,
+      "ms": 54.60000002384186,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "blank",
+      "split": "development",
+      "index": 20,
+      "ms": 85.89999997615814,
+      "decoded": null,
+      "error": null,
+      "score": 4,
+      "rect": {
+        "x": 75.2,
+        "y": 75.2,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 21,
+      "ms": 56.59999990463257,
+      "decoded": null,
+      "error": "チェックサム不一致 (e5 != 1ab)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "plain",
+      "split": "development",
+      "index": 22,
+      "ms": 50.60000002384186,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "left",
+      "split": "development",
+      "index": 23,
+      "ms": 38.299999952316284,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.2,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "right",
+      "split": "development",
+      "index": 24,
+      "ms": 58.700000047683716,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.8,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "up",
+      "split": "development",
+      "index": 25,
+      "ms": 42.799999952316284,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.2,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "down",
+      "split": "development",
+      "index": 26,
+      "ms": 48.60000002384186,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.8,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "small",
+      "split": "development",
+      "index": 27,
+      "ms": 10.599999904632568,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "large",
+      "split": "development",
+      "index": 28,
+      "ms": 95.90000009536743,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 56,
+        "y": 56,
+        "w": 288,
+        "h": 288
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 29,
+      "ms": 214.89999997615814,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 104.00000000000003,
+        "y": 108.80000000000003,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 30,
+      "ms": 210.10000002384186,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 102.08000000000001,
+        "y": 133.76000000000002,
+        "w": 207.35999999999999,
+        "h": 207.35999999999999
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 31,
+      "ms": 201.10000002384186,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 108.56,
+        "y": 94.16,
+        "w": 211.68,
+        "h": 211.68
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 32,
+      "ms": 178.09999990463257,
+      "decoded": null,
+      "error": "チェックサム不一致 (3f != 16)",
+      "score": 12,
+      "rect": {
+        "x": 64.16,
+        "y": 73.28,
+        "w": 253.44,
+        "h": 253.44
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 33,
+      "ms": 182.20000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 65.6,
+        "y": 94.4,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 34,
+      "ms": 190.20000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 8,
+      "rect": {
+        "x": 63.2,
+        "y": 77.6,
+        "w": 216,
+        "h": 216
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "perspective",
+      "split": "development",
+      "index": 35,
+      "ms": 178.89999997615814,
+      "decoded": null,
+      "error": "チェックサム不一致 (e4 != 288)",
+      "score": 14,
+      "rect": {
+        "x": 63.19999999999999,
+        "y": 72.8,
+        "w": 244.8,
+        "h": 244.8
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "blur",
+      "split": "development",
+      "index": 36,
+      "ms": 50.39999997615814,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "noise",
+      "split": "development",
+      "index": 37,
+      "ms": 54.700000047683716,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "dark",
+      "split": "development",
+      "index": 38,
+      "ms": 45.39999997615814,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "cast",
+      "split": "development",
+      "index": 39,
+      "ms": 47.699999928474426,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "saturation",
+      "split": "development",
+      "index": 40,
+      "ms": 55.5,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "hue",
+      "split": "development",
+      "index": 41,
+      "ms": 49.39999997615814,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "blank",
+      "split": "development",
+      "index": 42,
+      "ms": 84.69999992847443,
+      "decoded": null,
+      "error": null,
+      "score": 4,
+      "rect": {
+        "x": 75.2,
+        "y": 75.2,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 43,
+      "ms": 44.700000047683716,
+      "decoded": null,
+      "error": "チェックサム不一致 (87 != d5)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "plain",
+      "split": "development",
+      "index": 44,
+      "ms": 47.199999928474426,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "left",
+      "split": "development",
+      "index": 45,
+      "ms": 42.89999997615814,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.2,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "right",
+      "split": "development",
+      "index": 46,
+      "ms": 64.30000007152557,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.8,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "up",
+      "split": "development",
+      "index": 47,
+      "ms": 48.39999997615814,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.2,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "down",
+      "split": "development",
+      "index": 48,
+      "ms": 59.10000002384186,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.8,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "small",
+      "split": "development",
+      "index": 49,
+      "ms": 11,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "large",
+      "split": "development",
+      "index": 50,
+      "ms": 84.60000002384186,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 56,
+        "y": 56,
+        "w": 288,
+        "h": 288
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 51,
+      "ms": 185,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 115.04000000000002,
+        "y": 129.44000000000003,
+        "w": 207.35999999999999,
+        "h": 207.35999999999999
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 52,
+      "ms": 185.70000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 108.56,
+        "y": 118.64000000000001,
+        "w": 211.68,
+        "h": 211.68
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 53,
+      "ms": 192.5,
+      "decoded": null,
+      "error": "不正な長さ: 72",
+      "score": 13,
+      "rect": {
+        "x": 94.59200000000001,
+        "y": 94.59200000000001,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 54,
+      "ms": 203.39999997615814,
+      "decoded": null,
+      "error": "チェックサム不一致 (d9 != e0)",
+      "score": 12,
+      "rect": {
+        "x": 79.03999999999999,
+        "y": 87.67999999999999,
+        "w": 224.64000000000001,
+        "h": 224.64000000000001
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 55,
+      "ms": 183.29999995231628,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 65.6,
+        "y": 94.4,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 56,
+      "ms": 188.79999995231628,
+      "decoded": null,
+      "error": "チェックサム不一致 (64 != 1b9)",
+      "score": 12,
+      "rect": {
+        "x": 61.03999999999999,
+        "y": 122.96000000000001,
+        "w": 220.32,
+        "h": 220.32
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "perspective",
+      "split": "development",
+      "index": 57,
+      "ms": 190.89999997615814,
+      "decoded": null,
+      "error": "チェックサム不一致 (da != 43d)",
+      "score": 14,
+      "rect": {
+        "x": 65.6,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "blur",
+      "split": "development",
+      "index": 58,
+      "ms": 55.5,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "noise",
+      "split": "development",
+      "index": 59,
+      "ms": 67.20000004768372,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "dark",
+      "split": "development",
+      "index": 60,
+      "ms": 52,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "cast",
+      "split": "development",
+      "index": 61,
+      "ms": 49.89999997615814,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "saturation",
+      "split": "development",
+      "index": 62,
+      "ms": 57.39999997615814,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "hue",
+      "split": "development",
+      "index": 63,
+      "ms": 47.300000071525574,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "blank",
+      "split": "development",
+      "index": 64,
+      "ms": 90.5,
+      "decoded": null,
+      "error": null,
+      "score": 4,
+      "rect": {
+        "x": 75.2,
+        "y": 75.2,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 65,
+      "ms": 50.60000002384186,
+      "decoded": null,
+      "error": "チェックサム不一致 (ba != d2)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "plain",
+      "split": "development",
+      "index": 66,
+      "ms": 47.39999997615814,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "left",
+      "split": "development",
+      "index": 67,
+      "ms": 49.10000002384186,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.2,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "right",
+      "split": "development",
+      "index": 68,
+      "ms": 54.10000002384186,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.8,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "up",
+      "split": "development",
+      "index": 69,
+      "ms": 44.700000047683716,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.2,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "down",
+      "split": "development",
+      "index": 70,
+      "ms": 52.299999952316284,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.8,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "small",
+      "split": "development",
+      "index": 71,
+      "ms": 11.200000047683716,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "large",
+      "split": "development",
+      "index": 72,
+      "ms": 88.60000002384186,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 56,
+        "y": 56,
+        "w": 288,
+        "h": 288
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 73,
+      "ms": 177.70000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 106.4,
+        "y": 120.8,
+        "w": 216,
+        "h": 216
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 74,
+      "ms": 188.79999995231628,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 104.32639999999999,
+        "y": 114.4928,
+        "w": 220.14720000000003,
+        "h": 220.14720000000003
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 75,
+      "ms": 201.19999992847443,
+      "decoded": null,
+      "error": "チェックサム不一致 (be != 2b8)",
+      "score": 13,
+      "rect": {
+        "x": 92.28800000000001,
+        "y": 96.89600000000002,
+        "w": 235.00799999999998,
+        "h": 235.00799999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 76,
+      "ms": 186.20000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 92,
+        "y": 92,
+        "w": 216,
+        "h": 216
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 77,
+      "ms": 211.29999995231628,
+      "decoded": null,
+      "error": null,
+      "score": 9,
+      "rect": {
+        "x": 65.6,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 78,
+      "ms": 180.60000002384186,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 77.19679999999998,
+        "y": 98.9696,
+        "w": 180.6336,
+        "h": 180.6336
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "perspective",
+      "split": "development",
+      "index": 79,
+      "ms": 189.39999997615814,
+      "decoded": null,
+      "error": "チェックサム不一致 (3c != 360)",
+      "score": 14,
+      "rect": {
+        "x": 63.19999999999999,
+        "y": 72.8,
+        "w": 244.8,
+        "h": 244.8
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "blur",
+      "split": "development",
+      "index": 80,
+      "ms": 46.39999997615814,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "noise",
+      "split": "development",
+      "index": 81,
+      "ms": 47.699999928474426,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "dark",
+      "split": "development",
+      "index": 82,
+      "ms": 51.300000071525574,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "cast",
+      "split": "development",
+      "index": 83,
+      "ms": 53.60000002384186,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "saturation",
+      "split": "development",
+      "index": 84,
+      "ms": 54.39999997615814,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "hue",
+      "split": "development",
+      "index": 85,
+      "ms": 53.799999952316284,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "blank",
+      "split": "development",
+      "index": 86,
+      "ms": 102,
+      "decoded": null,
+      "error": null,
+      "score": 4,
+      "rect": {
+        "x": 75.2,
+        "y": 75.2,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 87,
+      "ms": 51,
+      "decoded": null,
+      "error": "チェックサム不一致 (ab != d5)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "plain",
+      "split": "development",
+      "index": 88,
+      "ms": 46.700000047683716,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "left",
+      "split": "development",
+      "index": 89,
+      "ms": 37.39999997615814,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.2,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "right",
+      "split": "development",
+      "index": 90,
+      "ms": 52.700000047683716,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.8,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "up",
+      "split": "development",
+      "index": 91,
+      "ms": 52.39999997615814,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.2,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "down",
+      "split": "development",
+      "index": 92,
+      "ms": 53.200000047683716,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.8,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "small",
+      "split": "development",
+      "index": 93,
+      "ms": 11.400000095367432,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "large",
+      "split": "development",
+      "index": 94,
+      "ms": 82,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 56,
+        "y": 56,
+        "w": 288,
+        "h": 288
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 95,
+      "ms": 223,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 86.24000000000001,
+        "y": 58.879999999999995,
+        "w": 207.35999999999999,
+        "h": 207.35999999999999
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 96,
+      "ms": 214.5,
+      "decoded": null,
+      "error": "チェックサム不一致 (bd != 103)",
+      "score": 12,
+      "rect": {
+        "x": 82.88,
+        "y": 75.19999999999999,
+        "w": 184.32,
+        "h": 184.32
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 97,
+      "ms": 186.69999992847443,
+      "decoded": null,
+      "error": "不正な長さ: 72",
+      "score": 13,
+      "rect": {
+        "x": 92.1728,
+        "y": 83.18719999999999,
+        "w": 233.62560000000002,
+        "h": 233.62560000000002
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 98,
+      "ms": 205.20000004768372,
+      "decoded": null,
+      "error": "チェックサム不一致 (91 != 18)",
+      "score": 12,
+      "rect": {
+        "x": 64.16,
+        "y": 73.28,
+        "w": 253.44,
+        "h": 253.44
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 99,
+      "ms": 181,
+      "decoded": null,
+      "error": "不正な長さ: 90",
+      "score": 12,
+      "rect": {
+        "x": 65.6,
+        "y": 94.4,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 100,
+      "ms": 213.10000002384186,
+      "decoded": null,
+      "error": "不正な長さ: 87",
+      "score": 12,
+      "rect": {
+        "x": 60.608000000000004,
+        "y": 122.81600000000003,
+        "w": 221.18399999999997,
+        "h": 221.18399999999997
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "perspective",
+      "split": "development",
+      "index": 101,
+      "ms": 208,
+      "decoded": null,
+      "error": "不正な長さ: 90",
+      "score": 14,
+      "rect": {
+        "x": 53.599999999999994,
+        "y": 96.80000000000001,
+        "w": 235.2,
+        "h": 235.2
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "blur",
+      "split": "development",
+      "index": 102,
+      "ms": 46,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "noise",
+      "split": "development",
+      "index": 103,
+      "ms": 62.09999990463257,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "dark",
+      "split": "development",
+      "index": 104,
+      "ms": 46.60000002384186,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "cast",
+      "split": "development",
+      "index": 105,
+      "ms": 45.799999952316284,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "saturation",
+      "split": "development",
+      "index": 106,
+      "ms": 44.299999952316284,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "hue",
+      "split": "development",
+      "index": 107,
+      "ms": 44.89999997615814,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "blank",
+      "split": "development",
+      "index": 108,
+      "ms": 91.20000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 4,
+      "rect": {
+        "x": 75.2,
+        "y": 75.2,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 109,
+      "ms": 51.199999928474426,
+      "decoded": null,
+      "error": "チェックサム不一致 (95 != d7)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "x",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 110,
+      "ms": 57.39999997615814,
+      "decoded": "x",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 111,
+      "ms": 43.199999928474426,
+      "decoded": "xx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 112,
+      "ms": 43.300000071525574,
+      "decoded": "xxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 113,
+      "ms": 45,
+      "decoded": "xxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 114,
+      "ms": 55.60000002384186,
+      "decoded": "xxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 115,
+      "ms": 52.299999952316284,
+      "decoded": "xxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 116,
+      "ms": 43.60000002384186,
+      "decoded": "xxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 117,
+      "ms": 47,
+      "decoded": "xxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 118,
+      "ms": 47,
+      "decoded": "xxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 119,
+      "ms": 46.199999928474426,
+      "decoded": "xxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 120,
+      "ms": 55.800000071525574,
+      "decoded": "xxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 121,
+      "ms": 43.5,
+      "decoded": "xxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 122,
+      "ms": 48.700000047683716,
+      "decoded": "xxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 123,
+      "ms": 49.09999990463257,
+      "decoded": "xxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 124,
+      "ms": 43.5,
+      "decoded": "xxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 125,
+      "ms": 45.5,
+      "decoded": "xxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 126,
+      "ms": 59.39999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 127,
+      "ms": 44.39999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 128,
+      "ms": 48.299999952316284,
+      "decoded": "xxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 129,
+      "ms": 51.699999928474426,
+      "decoded": "xxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 130,
+      "ms": 54.89999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 131,
+      "ms": 68.10000002384186,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 132,
+      "ms": 58.800000071525574,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 133,
+      "ms": 56.89999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 134,
+      "ms": 54,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 135,
+      "ms": 56.699999928474426,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 136,
+      "ms": 70.10000002384186,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 137,
+      "ms": 57.89999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 138,
+      "ms": 49.699999928474426,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 139,
+      "ms": 56,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 140,
+      "ms": 50.89999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 141,
+      "ms": 58.299999952316284,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 142,
+      "ms": 46.39999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 143,
+      "ms": 53.5,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 144,
+      "ms": 55.10000002384186,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 145,
+      "ms": 55.39999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 146,
+      "ms": 52,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 147,
+      "ms": 66,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 148,
+      "ms": 58.299999952316284,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 149,
+      "ms": 55.39999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 150,
+      "ms": 58.90000009536743,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 151,
+      "ms": 63.5,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 152,
+      "ms": 67.79999995231628,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 153,
+      "ms": 64.19999992847443,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 154,
+      "ms": 57.89999997615814,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 155,
+      "ms": 58.799999952316284,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 156,
+      "ms": 56.300000071525574,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 157,
+      "ms": 67.10000002384186,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "未知の画像です",
+      "condition": "rotate7",
+      "split": "holdout",
+      "index": 158,
+      "ms": 230.90000009536743,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 63.199999999999996,
+        "y": 92,
+        "w": 207.35999999999999,
+        "h": 207.35999999999999
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "未知の画像です",
+      "condition": "rotate-12",
+      "split": "holdout",
+      "index": 159,
+      "ms": 226.89999997615814,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 106.4,
+        "y": 129.44000000000003,
+        "w": 207.35999999999999,
+        "h": 207.35999999999999
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "未知の画像です",
+      "condition": "held-perspective",
+      "split": "holdout",
+      "index": 160,
+      "ms": 208.79999995231628,
+      "decoded": null,
+      "error": "チェックサム不一致 (b5 != 103)",
+      "score": 13,
+      "rect": {
+        "x": 85.74924800000001,
+        "y": 56.446976,
+        "w": 248.3712,
+        "h": 248.3712
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "未知の画像です",
+      "condition": "held-combined",
+      "split": "holdout",
+      "index": 161,
+      "ms": 211.30000007152557,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 80.00000000000001,
+        "y": 46.4,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://test.invalid/holdout",
+      "condition": "rotate7",
+      "split": "holdout",
+      "index": 162,
+      "ms": 230.70000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 9,
+      "rect": {
+        "x": 89.84,
+        "y": 69.67999999999999,
+        "w": 220.32,
+        "h": 220.32
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://test.invalid/holdout",
+      "condition": "rotate-12",
+      "split": "holdout",
+      "index": 163,
+      "ms": 191.90000009536743,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 108.56,
+        "y": 118.72640000000001,
+        "w": 211.68,
+        "h": 211.68
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://test.invalid/holdout",
+      "condition": "held-perspective",
+      "split": "holdout",
+      "index": 164,
+      "ms": 196.20000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 108.56,
+        "y": 94.16,
+        "w": 211.68,
+        "h": 211.68
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://test.invalid/holdout",
+      "condition": "held-combined",
+      "split": "holdout",
+      "index": 165,
+      "ms": 224.39999997615814,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 77.7728,
+        "y": 55.0784,
+        "w": 215.65439999999998,
+        "h": 215.65439999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "condition": "rotate7",
+      "split": "holdout",
+      "index": 166,
+      "ms": 192.5,
+      "decoded": null,
+      "error": "チェックサム不一致 (be != 0)",
+      "score": 12,
+      "rect": {
+        "x": 96.7808,
+        "y": 67.98079999999999,
+        "w": 191.6928,
+        "h": 191.6928
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "condition": "rotate-12",
+      "split": "holdout",
+      "index": 167,
+      "ms": 178.70000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 106.4,
+        "y": 120.8,
+        "w": 216,
+        "h": 216
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "condition": "held-perspective",
+      "split": "holdout",
+      "index": 168,
+      "ms": 175.90000009536743,
+      "decoded": null,
+      "error": "チェックサム不一致 (8c != b4)",
+      "score": 12,
+      "rect": {
+        "x": 101.50400000000002,
+        "y": 77.312,
+        "w": 235.00799999999998,
+        "h": 235.00799999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "condition": "held-combined",
+      "split": "holdout",
+      "index": 169,
+      "ms": 172.79999995231628,
+      "decoded": null,
+      "error": "不正な長さ: 180",
+      "score": 12,
+      "rect": {
+        "x": 104.0384,
+        "y": 110.912,
+        "w": 191.9232,
+        "h": 191.9232
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/0",
+      "condition": "sealed-0",
+      "split": "final-holdout",
+      "index": 170,
+      "ms": 172.80000007152557,
+      "decoded": null,
+      "error": "不正な長さ: 75",
+      "score": 12,
+      "rect": {
+        "x": 96.80000000000001,
+        "y": 82.4,
+        "w": 235.2,
+        "h": 235.2
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価1",
+      "condition": "sealed-1",
+      "split": "final-holdout",
+      "index": 171,
+      "ms": 174.89999997615814,
+      "decoded": null,
+      "error": "不正な長さ: 78",
+      "score": 12,
+      "rect": {
+        "x": 55.99999999999999,
+        "y": 73.27999999999999,
+        "w": 276.48,
+        "h": 276.48
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/2",
+      "condition": "sealed-2",
+      "split": "final-holdout",
+      "index": 172,
+      "ms": 182,
+      "decoded": null,
+      "error": "チェックサム不一致 (8e != 66)",
+      "score": 12,
+      "rect": {
+        "x": 106.4,
+        "y": 106.4,
+        "w": 216,
+        "h": 216
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価3",
+      "condition": "sealed-3",
+      "split": "final-holdout",
+      "index": 173,
+      "ms": 164.19999992847443,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 102.236672,
+        "y": 98.476544,
+        "w": 195.526656,
+        "h": 195.526656
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/4",
+      "condition": "sealed-4",
+      "split": "final-holdout",
+      "index": 174,
+      "ms": 174.80000007152557,
+      "decoded": null,
+      "error": "不正な長さ: 126",
+      "score": 12,
+      "rect": {
+        "x": 89.75359999999999,
+        "y": 110.5664,
+        "w": 207.6672,
+        "h": 207.6672
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価5",
+      "condition": "sealed-5",
+      "split": "final-holdout",
+      "index": 175,
+      "ms": 159.5,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 115.04000000000002,
+        "y": 125.12000000000002,
+        "w": 207.35999999999999,
+        "h": 207.35999999999999
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/6",
+      "condition": "sealed-6",
+      "split": "final-holdout",
+      "index": 176,
+      "ms": 192.20000004768372,
+      "decoded": null,
+      "error": "不正な長さ: 126",
+      "score": 12,
+      "rect": {
+        "x": 94.40000000000002,
+        "y": 104.00000000000001,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価7",
+      "condition": "sealed-7",
+      "split": "final-holdout",
+      "index": 177,
+      "ms": 186.60000002384186,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 75.2,
+        "y": 80,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/8",
+      "condition": "sealed-8",
+      "split": "final-holdout",
+      "index": 178,
+      "ms": 163.5,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 80,
+        "y": 94.4,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価9",
+      "condition": "sealed-9",
+      "split": "final-holdout",
+      "index": 179,
+      "ms": 166.09999990463257,
+      "decoded": null,
+      "error": "不正な長さ: 72",
+      "score": 12,
+      "rect": {
+        "x": 94.4,
+        "y": 108.8,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/10",
+      "condition": "sealed-10",
+      "split": "final-holdout",
+      "index": 180,
+      "ms": 160.10000002384186,
+      "decoded": null,
+      "error": "チェックサム不一致 (6a != 2b8)",
+      "score": 12,
+      "rect": {
+        "x": 80,
+        "y": 113.60000000000001,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価11",
+      "condition": "sealed-11",
+      "split": "final-holdout",
+      "index": 181,
+      "ms": 168.20000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 10,
+      "rect": {
+        "x": 108.80000000000001,
+        "y": 118.4,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/12",
+      "condition": "sealed-12",
+      "split": "final-holdout",
+      "index": 182,
+      "ms": 170.5,
+      "decoded": null,
+      "error": "チェックサム不一致 (4c != 2b8)",
+      "score": 13,
+      "rect": {
+        "x": 85.04000000000002,
+        "y": 99.44000000000003,
+        "w": 258.71999999999997,
+        "h": 258.71999999999997
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価13",
+      "condition": "sealed-13",
+      "split": "final-holdout",
+      "index": 183,
+      "ms": 162.5,
+      "decoded": null,
+      "error": "不正な長さ: 84",
+      "score": 12,
+      "rect": {
+        "x": 104,
+        "y": 132.8,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/14",
+      "condition": "sealed-14",
+      "split": "final-holdout",
+      "index": 184,
+      "ms": 166.30000007152557,
+      "decoded": null,
+      "error": "チェックサム不一致 (6d != 18)",
+      "score": 12,
+      "rect": {
+        "x": 73.28,
+        "y": 87.68,
+        "w": 207.35999999999999,
+        "h": 207.35999999999999
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価15",
+      "condition": "sealed-15",
+      "split": "final-holdout",
+      "index": 185,
+      "ms": 189.89999997615814,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 129.46534400000002,
+        "y": 115.06534400000001,
+        "w": 169.86931199999998,
+        "h": 169.86931199999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/16",
+      "condition": "sealed-16",
+      "split": "final-holdout",
+      "index": 186,
+      "ms": 156.90000009536743,
+      "decoded": null,
+      "error": "不正な長さ: 75",
+      "score": 13,
+      "rect": {
+        "x": 112.64,
+        "y": 87.67999999999999,
+        "w": 195.84,
+        "h": 195.84
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価17",
+      "condition": "sealed-17",
+      "split": "final-holdout",
+      "index": 187,
+      "ms": 171.09999990463257,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 63.199999999999996,
+        "y": 82.4,
+        "w": 235.2,
+        "h": 235.2
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/18",
+      "condition": "sealed-18",
+      "split": "final-holdout",
+      "index": 188,
+      "ms": 168.60000002384186,
+      "decoded": null,
+      "error": "チェックサム不一致 (3b != 78)",
+      "score": 13,
+      "rect": {
+        "x": 94.40000000000002,
+        "y": 84.80000000000001,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価19",
+      "condition": "sealed-19",
+      "split": "final-holdout",
+      "index": 189,
+      "ms": 169.5,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 100.16,
+        "y": 126.08000000000001,
+        "w": 184.32,
+        "h": 184.32
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/20",
+      "condition": "sealed-20",
+      "split": "final-holdout",
+      "index": 190,
+      "ms": 167.10000002384186,
+      "decoded": null,
+      "error": null,
+      "score": 11,
+      "rect": {
+        "x": 100.64000000000001,
+        "y": 90.56,
+        "w": 207.35999999999999,
+        "h": 207.35999999999999
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価21",
+      "condition": "sealed-21",
+      "split": "final-holdout",
+      "index": 191,
+      "ms": 160.89999997615814,
+      "decoded": null,
+      "error": "不正な長さ: 84",
+      "score": 12,
+      "rect": {
+        "x": 91.52000000000001,
+        "y": 73.28,
+        "w": 253.44,
+        "h": 253.44
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/22",
+      "condition": "sealed-22",
+      "split": "final-holdout",
+      "index": 192,
+      "ms": 165.5,
+      "decoded": null,
+      "error": "チェックサム不一致 (a5 != 2)",
+      "score": 12,
+      "rect": {
+        "x": 70.4,
+        "y": 56,
+        "w": 288,
+        "h": 288
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価23",
+      "condition": "sealed-23",
+      "split": "final-holdout",
+      "index": 193,
+      "ms": 167.19999992847443,
+      "decoded": null,
+      "error": null,
+      "score": 9,
+      "rect": {
+        "x": 118.4,
+        "y": 118.4,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "very-dark",
+      "split": "stress",
+      "index": 194,
+      "ms": 82.10000002384186,
+      "decoded": null,
+      "error": null,
+      "score": 4,
+      "rect": {
+        "x": 75.2,
+        "y": 75.2,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "severe-noise",
+      "split": "stress",
+      "index": 195,
+      "ms": 49.700000047683716,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "severe-blur",
+      "split": "stress",
+      "index": 196,
+      "ms": 120,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "occlusion",
+      "split": "stress",
+      "index": 197,
+      "ms": 45.39999997615814,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "glare",
+      "split": "stress",
+      "index": 198,
+      "ms": 44.39999997615814,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "clutter",
+      "split": "stress",
+      "index": 199,
+      "ms": 99.19999992847443,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 84.80000000000001,
+        "y": 84.80000000000001,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "very-dark",
+      "split": "stress",
+      "index": 200,
+      "ms": 95.20000004768372,
+      "decoded": null,
+      "error": null,
+      "score": 4,
+      "rect": {
+        "x": 75.2,
+        "y": 75.2,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "severe-noise",
+      "split": "stress",
+      "index": 201,
+      "ms": 46.799999952316284,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "severe-blur",
+      "split": "stress",
+      "index": 202,
+      "ms": 42.39999997615814,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "occlusion",
+      "split": "stress",
+      "index": 203,
+      "ms": 44.5,
+      "decoded": null,
+      "error": "チェックサム不一致 (91 != 87)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "glare",
+      "split": "stress",
+      "index": 204,
+      "ms": 42.200000047683716,
+      "decoded": null,
+      "error": "チェックサム不一致 (89 != 87)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "clutter",
+      "split": "stress",
+      "index": 205,
+      "ms": 93,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 84.80000000000001,
+        "y": 84.80000000000001,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "very-dark",
+      "split": "stress",
+      "index": 206,
+      "ms": 84.5,
+      "decoded": null,
+      "error": null,
+      "score": 4,
+      "rect": {
+        "x": 75.2,
+        "y": 75.2,
+        "w": 192,
+        "h": 192
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "severe-noise",
+      "split": "stress",
+      "index": 207,
+      "ms": 45.10000002384186,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "severe-blur",
+      "split": "stress",
+      "index": 208,
+      "ms": 47.10000002384186,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "occlusion",
+      "split": "stress",
+      "index": 209,
+      "ms": 48.60000002384186,
+      "decoded": null,
+      "error": "チェックサム不一致 (dd != 95)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "glare",
+      "split": "stress",
+      "index": 210,
+      "ms": 40.60000002384186,
+      "decoded": null,
+      "error": "チェックサム不一致 (87 != 95)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "clutter",
+      "split": "stress",
+      "index": 211,
+      "ms": 90.10000002384186,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 84.80000000000001,
+        "y": 84.80000000000001,
+        "w": 230.39999999999998,
+        "h": 230.39999999999998
+      },
+      "confirmationFrames": 1,
+      "trackedMs": null,
+      "success": true,
+      "falsePositive": false
+    }
+  ],
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+  "memory": {
+    "usedJSHeapSize": 33457230
+  },
+  "version": "baseline",
+  "timestamp": "2026-10-26T09:58:31.655Z",
+  "browser": "156.0.4314.42",
+  "summary": {
+    "success": 124,
+    "total": 202,
+    "falsePositives": 0,
+    "meanMs": 102.04764150898411,
+    "medianMs": 58.90000009536743,
+    "p95Ms": 213.30000007152557
+  }
+}

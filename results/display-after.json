@@ -1,0 +1,250 @@
+{
+  "rows": [
+    {
+      "text": "Hello, 6ColorQR!",
+      "size": 180,
+      "angle": -10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 233.10000014305115
+    },
+    {
+      "text": "Hello, 6ColorQR!",
+      "size": 180,
+      "angle": 0,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 188
+    },
+    {
+      "text": "Hello, 6ColorQR!",
+      "size": 180,
+      "angle": 10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 13.400000095367432
+    },
+    {
+      "text": "Hello, 6ColorQR!",
+      "size": 260,
+      "angle": -10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 13.599999904632568
+    },
+    {
+      "text": "Hello, 6ColorQR!",
+      "size": 260,
+      "angle": 0,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 12.200000047683716
+    },
+    {
+      "text": "Hello, 6ColorQR!",
+      "size": 260,
+      "angle": 10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 12
+    },
+    {
+      "text": "Hello, 6ColorQR!",
+      "size": 340,
+      "angle": -10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 8.800000190734863
+    },
+    {
+      "text": "Hello, 6ColorQR!",
+      "size": 340,
+      "angle": 0,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 8.900000095367432
+    },
+    {
+      "text": "Hello, 6ColorQR!",
+      "size": 340,
+      "angle": 10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 9.300000190734863
+    },
+    {
+      "text": "画面からの読み取り",
+      "size": 180,
+      "angle": -10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 9.399999856948853
+    },
+    {
+      "text": "画面からの読み取り",
+      "size": 180,
+      "angle": 0,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 9.699999809265137
+    },
+    {
+      "text": "画面からの読み取り",
+      "size": 180,
+      "angle": 10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 7.799999952316284
+    },
+    {
+      "text": "画面からの読み取り",
+      "size": 260,
+      "angle": -10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 8
+    },
+    {
+      "text": "画面からの読み取り",
+      "size": 260,
+      "angle": 0,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 6.200000047683716
+    },
+    {
+      "text": "画面からの読み取り",
+      "size": 260,
+      "angle": 10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 6.700000047683716
+    },
+    {
+      "text": "画面からの読み取り",
+      "size": 340,
+      "angle": -10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 6.8999998569488525
+    },
+    {
+      "text": "画面からの読み取り",
+      "size": 340,
+      "angle": 0,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 11.399999856948853
+    },
+    {
+      "text": "画面からの読み取り",
+      "size": 340,
+      "angle": 10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 8.800000190734863
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "size": 180,
+      "angle": -10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 6.400000095367432
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "size": 180,
+      "angle": 0,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 10.300000190734863
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "size": 180,
+      "angle": 10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 9.100000143051147
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "size": 260,
+      "angle": -10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 8.899999856948853
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "size": 260,
+      "angle": 0,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 11.799999952316284
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "size": 260,
+      "angle": 10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 10.700000047683716
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "size": 340,
+      "angle": -10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 8.5
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "size": 340,
+      "angle": 0,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 12.299999952316284
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "size": 340,
+      "angle": 10,
+      "success": true,
+      "score": 16,
+      "reason": null,
+      "ms": 10.199999809265137
+    }
+  ],
+  "success": 27,
+  "total": 27,
+  "browser": "156.0.4314.42"
+}

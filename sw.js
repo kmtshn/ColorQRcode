@@ -1,23 +1,15 @@
 /* Service Worker for 6ColorQR PWA */
-const CACHE_NAME = '6colorqr-v2';
+const CACHE_NAME = '6colorqr-v4';
 const ASSETS = [
   './',
   './index.html',
-  './manifest.json'
+  './manifest.json',
+  './scanner.js'
 ];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      // addAllは1つでも失敗すると全体が失敗するので、個別にtryする
-      return Promise.all(
-        ASSETS.map((url) =>
-          cache.add(url).catch((err) => {
-            console.warn('[SW] cache add failed:', url, err);
-          })
-        )
-      );
-    }).then(() => self.skipWaiting())
+    caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())
   );
 });
 
@@ -25,7 +17,7 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
       Promise.all(
-        keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k))
+        keys.filter((k) => k.startsWith('6colorqr-') && k !== CACHE_NAME).map((k) => caches.delete(k))
       )
     ).then(() => self.clients.claim())
   );
