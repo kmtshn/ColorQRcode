@@ -12,7 +12,7 @@ const {spawn}=require('node:child_process');
   await page.goto('http://127.0.0.1:8087/'+(version==='baseline'?'tests/baseline/index.html':'index.html'));
   await page.addScriptTag({path:'tests/fixtures.js'});
   const result=await page.evaluate(async(version)=>{
-   window.fixtureLegacy=version!=='improved-v2';
+   window.fixtureLegacy=!version.endsWith('-v2');
    const conditions=['plain','left','right','up','down','small','large','rotate-15','rotate-10','rotate-5','rotate5','rotate10','rotate15','perspective','blur','noise','dark','cast','saturation','hue','blank','corrupt'];
    const payloads=['A','日本語の検証','012345678901234567890123456789','https://example.org/qr?a=6','Z'.repeat(48)];
    const cases=[];

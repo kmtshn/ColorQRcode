@@ -718,6 +718,7 @@ document.addEventListener('DOMContentLoaded', () => {
       guideFrame.classList.remove('locked');
       drawDebug(null, null, 0, null);
       if (debugMode) showStatus(scanStatus, `${best.reason}・${best.ms.toFixed(1)}ms`, 'info');
+      else if (frameCount % 6 === 0) showStatus(scanStatus, 'コードを探しています。四隅を入れて、少し離してピントを合わせてください。', 'info');
       return;
     }
 

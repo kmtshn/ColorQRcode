@@ -1,5 +1,5 @@
 /* Service Worker for 6ColorQR PWA */
-const CACHE_NAME = '6colorqr-v3';
+const CACHE_NAME = '6colorqr-v4';
 const ASSETS = [
   './',
   './index.html',

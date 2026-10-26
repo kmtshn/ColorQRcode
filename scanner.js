@@ -98,6 +98,47 @@
     const format=tripleToNum(stream.slice(0,3))>=64?'v2-crc32':'legacy-xor';
     return {grid,score,text,reason,format};
   }
+  // Find the two isolated lower colour markers without assuming the camera
+  // frame background is the same colour as the code's quiet zone.
+  function markerCandidates(data,w,h) {
+    const labels=new Uint8Array(w*h),queue=new Int32Array(w*h),groups=[[],[]];
+    for(let i=0;i<labels.length;i++){
+      const r=data[i*4],g=data[i*4+1],b=data[i*4+2];
+      if(r>45&&r>g*1.35&&r>b*1.2)labels[i]=1;
+      else if(b>45&&b>g*1.35&&b>r*1.3)labels[i]=2;
+    }
+    for(let start=0;start<labels.length;start++){
+      const label=labels[start];if(!label)continue;
+      let head=0,tail=1,sx=0,sy=0,minX=w,maxX=0,minY=h,maxY=0;queue[0]=start;labels[start]=0;
+      while(head<tail){const i=queue[head++],x=i%w,y=(i/w)|0;sx+=x+.5;sy+=y+.5;
+        minX=Math.min(minX,x);maxX=Math.max(maxX,x);minY=Math.min(minY,y);maxY=Math.max(maxY,y);
+        for(const [nx,ny] of [[x-1,y],[x+1,y],[x,y-1],[x,y+1]]){
+          if(nx<0||ny<0||nx>=w||ny>=h)continue;const j=ny*w+nx;
+          if(labels[j]===label){labels[j]=0;queue[tail++]=j;}
+        }
+      }
+      const bw=maxX-minX+1,bh=maxY-minY+1;
+      if(tail>=12&&bw/bh>.4&&bw/bh<2.5&&tail/(bw*bh)>.4)groups[label-1].push({x:sx/tail,y:sy/tail,area:tail});
+    }
+    for(const group of groups)group.sort((a,b)=>b.area-a.area).splice(24);
+    const pairs=[];
+    for(const red of groups[0])for(const blue of groups[1]){
+      const d=Math.hypot(red.x-blue.x,red.y-blue.y),expected=(d/7)**2;
+      if(d<35||d>Math.max(w,h)*.95)continue;
+      if([red,blue].some(p=>p.area<expected*.35||p.area>expected*2))continue;
+      pairs.push({red,blue,cost:Math.abs(Math.log(red.area/expected))+Math.abs(Math.log(blue.area/expected))});
+    }
+    const quads=[];
+    for(const {red,blue} of pairs.sort((a,b)=>a.cost-b.cost).slice(0,24)){
+      const rx=(blue.x-red.x)/14,ry=(blue.y-red.y)/14;
+      for(const height of [1,.95,1.05])for(const shear of [0,-.05,.05]){
+        const ux=ry*height+rx*shear,uy=-rx*height+ry*shear;
+        const p=(x,y)=>({x:red.x+rx*x+ux*y,y:red.y+ry*x+uy*y});
+        quads.push([p(-1,15),p(15,15),p(15,-1),p(-1,-1)]);
+      }
+    }
+    return quads;
+  }
   function scan(source,baseRect) {
     const start=performance.now(),vw=source.videoWidth||source.width,vh=source.videoHeight||source.height;
     if(!vw||!vh)return {score:0,reason:'empty-frame',ms:0};
@@ -116,6 +157,7 @@
     };
     let success=false;
     if(previous?.w===w&&previous?.h===h)success=attempt(previous.corners);
+    if(!success)for(const quad of markerCandidates(data,w,h))if(attempt(quad)){success=true;break;}
     if(!success){previous=null;
       outer:for(const quad of detect(data,w,h))for(let rotation=0;rotation<4;rotation++){
         const c=quad.slice(rotation).concat(quad.slice(0,rotation));

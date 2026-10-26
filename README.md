@@ -49,6 +49,7 @@ Chromeの場合は環境変数 `BROWSER_CHANNEL=chrome` を設定してくださ
 
 すべてWindows上のEdgeによる合成画像試験です。Android Chrome・iOS Safariの実機カメラは未確認です。
 
+- [ディスプレイ撮影への追加修正と検証](DISPLAY-FIX.md)
 - [技術レポートと実機確認手順](REPORT.md)
 - [条件別の実測比較](results/COMPARISON.md)
 - [成功・失敗条件の画像](results/conditions.png)
@@ -67,7 +68,7 @@ Chromeの場合は環境変数 `BROWSER_CHANNEL=chrome` を設定してくださ
 |tests/baseline/index.html|変更前の原本|
 |results/|測定JSON、比較表、画像|
 
-オフラインキャッシュをv3へ更新しました。旧キャッシュからの更新後はページを再読み込みしてください。
+オフラインキャッシュをv4へ更新しました。旧キャッシュからの更新後はページを再読み込みしてください。
 
 ## License
 

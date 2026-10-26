@@ -1,0 +1,4 @@
+この最終稿に必要な検査（lint、資料との照合）を実行した記録があり、最終稿のハッシュが記録と合いました。合格の判定ではありません。完了報告を付けるときは、この出力の2行目を写してください。
+yomiyasu-check: executed via=verify run=20261026T112833Z-33732b69 attempt=1 final=sha256:0f6b04e741e0 mode=compose doc_type=article reader=informed checks=lint,materials meaning_risk=39 replay=skipped
+記録: C:\XCE\ColorQRcode\.yomiyasu\runs\20261026T112833Z-33732b69\attempt-1.json
+記録の中身: 見直し候補 最終稿 0件（新規作成）
