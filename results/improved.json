@@ -1,0 +1,7883 @@
+{
+  "rows": [
+    {
+      "text": "A",
+      "condition": "plain",
+      "split": "development",
+      "index": 0,
+      "ms": 321.8000000715256,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 3.3000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "left",
+      "split": "development",
+      "index": 1,
+      "ms": 28.399999976158142,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.19999999999999,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 51.19999999999999,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 320
+        },
+        {
+          "x": 51.19999999999999,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.700000047683716,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "right",
+      "split": "development",
+      "index": 2,
+      "ms": 9.899999976158142,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.80000000000001,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 108.80000000000001,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 320
+        },
+        {
+          "x": 108.80000000000001,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "up",
+      "split": "development",
+      "index": 3,
+      "ms": 7.800000071525574,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.19999999999999,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 291.2
+        },
+        {
+          "x": 80,
+          "y": 291.2
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 3.299999952316284,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "down",
+      "split": "development",
+      "index": 4,
+      "ms": 5.799999952316284,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.80000000000001,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 348.8
+        },
+        {
+          "x": 80,
+          "y": 348.8
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "small",
+      "split": "development",
+      "index": 5,
+      "ms": 6.200000047683716,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "corners": [
+        {
+          "x": 104,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 296
+        },
+        {
+          "x": 104,
+          "y": 296
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "large",
+      "split": "development",
+      "index": 6,
+      "ms": 11.700000047683716,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 54.5,
+        "y": 54.5,
+        "w": 292,
+        "h": 292
+      },
+      "corners": [
+        {
+          "x": 54.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 346.5
+        },
+        {
+          "x": 54.5,
+          "y": 346.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 7,
+      "ms": 12.100000023841858,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 51.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 284.5
+        },
+        {
+          "x": 116.5,
+          "y": 349.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 8,
+      "ms": 12.5,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 59.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 299.5
+        },
+        {
+          "x": 101.5,
+          "y": 341.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 9,
+      "ms": 12,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 311.5
+        },
+        {
+          "x": 89.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 10,
+      "ms": 10.400000095367432,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 89.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 331.5
+        },
+        {
+          "x": 69.5,
+          "y": 311.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 11,
+      "ms": 7.100000023841858,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 101.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 341.5
+        },
+        {
+          "x": 59.5,
+          "y": 299.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 12,
+      "ms": 7.600000023841858,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 116.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 349.5
+        },
+        {
+          "x": 51.5,
+          "y": 284.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.100000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "perspective",
+      "split": "development",
+      "index": 13,
+      "ms": 8.600000023841858,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 46.5,
+        "y": 65.5,
+        "w": 264,
+        "h": 266
+      },
+      "corners": [
+        {
+          "x": 88.5,
+          "y": 65.5
+        },
+        {
+          "x": 310.5,
+          "y": 102.5
+        },
+        {
+          "x": 308.5,
+          "y": 327.5
+        },
+        {
+          "x": 46.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "blur",
+      "split": "development",
+      "index": 14,
+      "ms": 63.699999928474426,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "noise",
+      "split": "development",
+      "index": 15,
+      "ms": 17.5,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "dark",
+      "split": "development",
+      "index": 16,
+      "ms": 6,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5999999046325684,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "cast",
+      "split": "development",
+      "index": 17,
+      "ms": 14.5,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "saturation",
+      "split": "development",
+      "index": 18,
+      "ms": 8.299999952316284,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "hue",
+      "split": "development",
+      "index": 19,
+      "ms": 5.599999904632568,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "blank",
+      "split": "development",
+      "index": 20,
+      "ms": 4.899999976158142,
+      "decoded": null,
+      "error": "no-region",
+      "score": 0,
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 21,
+      "ms": 8.100000023841858,
+      "decoded": null,
+      "error": "不正なチェックサム値",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "plain",
+      "split": "development",
+      "index": 22,
+      "ms": 7.5,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "left",
+      "split": "development",
+      "index": 23,
+      "ms": 8.300000071525574,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.19999999999999,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 51.19999999999999,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 320
+        },
+        {
+          "x": 51.19999999999999,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.6999999284744263,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "right",
+      "split": "development",
+      "index": 24,
+      "ms": 8.799999952316284,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.80000000000001,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 108.80000000000001,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 320
+        },
+        {
+          "x": 108.80000000000001,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "up",
+      "split": "development",
+      "index": 25,
+      "ms": 8.100000023841858,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.19999999999999,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 291.2
+        },
+        {
+          "x": 80,
+          "y": 291.2
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.299999952316284,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "down",
+      "split": "development",
+      "index": 26,
+      "ms": 7.899999976158142,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.80000000000001,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 348.8
+        },
+        {
+          "x": 80,
+          "y": 348.8
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "small",
+      "split": "development",
+      "index": 27,
+      "ms": 7.700000047683716,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "corners": [
+        {
+          "x": 104,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 296
+        },
+        {
+          "x": 104,
+          "y": 296
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5999999046325684,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "large",
+      "split": "development",
+      "index": 28,
+      "ms": 11.300000071525574,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 54.5,
+        "y": 54.5,
+        "w": 292,
+        "h": 292
+      },
+      "corners": [
+        {
+          "x": 54.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 346.5
+        },
+        {
+          "x": 54.5,
+          "y": 346.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 29,
+      "ms": 8.799999952316284,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 51.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 284.5
+        },
+        {
+          "x": 116.5,
+          "y": 349.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.2999999523162842,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 30,
+      "ms": 9.799999952316284,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 59.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 299.5
+        },
+        {
+          "x": 101.5,
+          "y": 341.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 31,
+      "ms": 18.799999952316284,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 311.5
+        },
+        {
+          "x": 89.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 32,
+      "ms": 9.100000023841858,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 89.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 331.5
+        },
+        {
+          "x": 69.5,
+          "y": 311.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7999999523162842,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 33,
+      "ms": 8.699999928474426,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 101.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 341.5
+        },
+        {
+          "x": 59.5,
+          "y": 299.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 34,
+      "ms": 9,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 116.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 349.5
+        },
+        {
+          "x": 51.5,
+          "y": 284.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "perspective",
+      "split": "development",
+      "index": 35,
+      "ms": 9.600000023841858,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 46.5,
+        "y": 65.5,
+        "w": 264,
+        "h": 266
+      },
+      "corners": [
+        {
+          "x": 88.5,
+          "y": 65.5
+        },
+        {
+          "x": 310.5,
+          "y": 102.5
+        },
+        {
+          "x": 308.5,
+          "y": 327.5
+        },
+        {
+          "x": 46.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 5.200000047683716,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "blur",
+      "split": "development",
+      "index": 36,
+      "ms": 13.399999976158142,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.200000047683716,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "noise",
+      "split": "development",
+      "index": 37,
+      "ms": 35.40000009536743,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7999999523162842,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "dark",
+      "split": "development",
+      "index": 38,
+      "ms": 8.100000023841858,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "cast",
+      "split": "development",
+      "index": 39,
+      "ms": 11.100000023841858,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "saturation",
+      "split": "development",
+      "index": 40,
+      "ms": 8.300000071525574,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.6999999284744263,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "hue",
+      "split": "development",
+      "index": 41,
+      "ms": 10.400000095367432,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.299999952316284,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "blank",
+      "split": "development",
+      "index": 42,
+      "ms": 5,
+      "decoded": null,
+      "error": "no-region",
+      "score": 0,
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 43,
+      "ms": 9.300000071525574,
+      "decoded": null,
+      "error": "チェックサム不一致 (87 != d5)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "plain",
+      "split": "development",
+      "index": 44,
+      "ms": 8.600000023841858,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "left",
+      "split": "development",
+      "index": 45,
+      "ms": 9.700000047683716,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.19999999999999,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 51.19999999999999,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 320
+        },
+        {
+          "x": 51.19999999999999,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.100000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "right",
+      "split": "development",
+      "index": 46,
+      "ms": 10.099999904632568,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.80000000000001,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 108.80000000000001,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 320
+        },
+        {
+          "x": 108.80000000000001,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.9000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "up",
+      "split": "development",
+      "index": 47,
+      "ms": 18.600000023841858,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.19999999999999,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 291.2
+        },
+        {
+          "x": 80,
+          "y": 291.2
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 3.299999952316284,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "down",
+      "split": "development",
+      "index": 48,
+      "ms": 10.200000047683716,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.80000000000001,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 348.8
+        },
+        {
+          "x": 80,
+          "y": 348.8
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "small",
+      "split": "development",
+      "index": 49,
+      "ms": 8.799999952316284,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "corners": [
+        {
+          "x": 104,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 296
+        },
+        {
+          "x": 104,
+          "y": 296
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "large",
+      "split": "development",
+      "index": 50,
+      "ms": 11.299999952316284,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 54.5,
+        "y": 54.5,
+        "w": 292,
+        "h": 292
+      },
+      "corners": [
+        {
+          "x": 54.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 346.5
+        },
+        {
+          "x": 54.5,
+          "y": 346.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 51,
+      "ms": 9.5,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 51.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 284.5
+        },
+        {
+          "x": 116.5,
+          "y": 349.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 52,
+      "ms": 8.799999952316284,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 59.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 299.5
+        },
+        {
+          "x": 101.5,
+          "y": 341.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.4000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 53,
+      "ms": 9.400000095367432,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 311.5
+        },
+        {
+          "x": 89.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5999999046325684,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 54,
+      "ms": 9.600000023841858,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 89.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 331.5
+        },
+        {
+          "x": 69.5,
+          "y": 311.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 55,
+      "ms": 9.599999904632568,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 101.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 341.5
+        },
+        {
+          "x": 59.5,
+          "y": 299.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.4000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 56,
+      "ms": 10.100000023841858,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 116.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 349.5
+        },
+        {
+          "x": 51.5,
+          "y": 284.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "perspective",
+      "split": "development",
+      "index": 57,
+      "ms": 9.100000023841858,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 46.5,
+        "y": 65.5,
+        "w": 264,
+        "h": 266
+      },
+      "corners": [
+        {
+          "x": 88.5,
+          "y": 65.5
+        },
+        {
+          "x": 310.5,
+          "y": 102.5
+        },
+        {
+          "x": 308.5,
+          "y": 327.5
+        },
+        {
+          "x": 46.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "blur",
+      "split": "development",
+      "index": 58,
+      "ms": 9.299999952316284,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "noise",
+      "split": "development",
+      "index": 59,
+      "ms": 10.100000023841858,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "dark",
+      "split": "development",
+      "index": 60,
+      "ms": 8.100000023841858,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "cast",
+      "split": "development",
+      "index": 61,
+      "ms": 9,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.9000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "saturation",
+      "split": "development",
+      "index": 62,
+      "ms": 9.5,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7999999523162842,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "hue",
+      "split": "development",
+      "index": 63,
+      "ms": 9.599999904632568,
+      "decoded": "012345678901234567890123456789",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.9000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "blank",
+      "split": "development",
+      "index": 64,
+      "ms": 4.899999976158142,
+      "decoded": null,
+      "error": "no-region",
+      "score": 0,
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "012345678901234567890123456789",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 65,
+      "ms": 13.899999976158142,
+      "decoded": null,
+      "error": "チェックサム不一致 (ba != d2)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "plain",
+      "split": "development",
+      "index": 66,
+      "ms": 15.200000047683716,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 9.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "left",
+      "split": "development",
+      "index": 67,
+      "ms": 10,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.19999999999999,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 51.19999999999999,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 320
+        },
+        {
+          "x": 51.19999999999999,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "right",
+      "split": "development",
+      "index": 68,
+      "ms": 8.600000023841858,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.80000000000001,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 108.80000000000001,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 320
+        },
+        {
+          "x": 108.80000000000001,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.6999999284744263,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "up",
+      "split": "development",
+      "index": 69,
+      "ms": 8.700000047683716,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.19999999999999,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 291.2
+        },
+        {
+          "x": 80,
+          "y": 291.2
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "down",
+      "split": "development",
+      "index": 70,
+      "ms": 8.300000071525574,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.80000000000001,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 348.8
+        },
+        {
+          "x": 80,
+          "y": 348.8
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "small",
+      "split": "development",
+      "index": 71,
+      "ms": 8.299999952316284,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "corners": [
+        {
+          "x": 104,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 296
+        },
+        {
+          "x": 104,
+          "y": 296
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "large",
+      "split": "development",
+      "index": 72,
+      "ms": 10.800000071525574,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 54.5,
+        "y": 54.5,
+        "w": 292,
+        "h": 292
+      },
+      "corners": [
+        {
+          "x": 54.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 346.5
+        },
+        {
+          "x": 54.5,
+          "y": 346.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 73,
+      "ms": 10.299999952316284,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 51.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 284.5
+        },
+        {
+          "x": 116.5,
+          "y": 349.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7999999523162842,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 74,
+      "ms": 9.899999976158142,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 59.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 299.5
+        },
+        {
+          "x": 101.5,
+          "y": 341.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 75,
+      "ms": 9.5,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 311.5
+        },
+        {
+          "x": 89.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 76,
+      "ms": 11,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 89.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 331.5
+        },
+        {
+          "x": 69.5,
+          "y": 311.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 77,
+      "ms": 10.200000047683716,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 101.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 341.5
+        },
+        {
+          "x": 59.5,
+          "y": 299.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 78,
+      "ms": 9.600000023841858,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 116.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 349.5
+        },
+        {
+          "x": 51.5,
+          "y": 284.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "perspective",
+      "split": "development",
+      "index": 79,
+      "ms": 8.100000023841858,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 46.5,
+        "y": 65.5,
+        "w": 264,
+        "h": 266
+      },
+      "corners": [
+        {
+          "x": 88.5,
+          "y": 65.5
+        },
+        {
+          "x": 310.5,
+          "y": 102.5
+        },
+        {
+          "x": 308.5,
+          "y": 327.5
+        },
+        {
+          "x": 46.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "blur",
+      "split": "development",
+      "index": 80,
+      "ms": 8.399999976158142,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "noise",
+      "split": "development",
+      "index": 81,
+      "ms": 9,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "dark",
+      "split": "development",
+      "index": 82,
+      "ms": 7.799999952316284,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "cast",
+      "split": "development",
+      "index": 83,
+      "ms": 8.299999952316284,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "saturation",
+      "split": "development",
+      "index": 84,
+      "ms": 8,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "hue",
+      "split": "development",
+      "index": 85,
+      "ms": 18.700000047683716,
+      "decoded": "https://example.org/qr?a=6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "blank",
+      "split": "development",
+      "index": 86,
+      "ms": 4.300000071525574,
+      "decoded": null,
+      "error": "no-region",
+      "score": 0,
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.org/qr?a=6",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 87,
+      "ms": 10.199999928474426,
+      "decoded": null,
+      "error": "チェックサム不一致 (ab != d5)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "plain",
+      "split": "development",
+      "index": 88,
+      "ms": 9,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "left",
+      "split": "development",
+      "index": 89,
+      "ms": 9.399999976158142,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.19999999999999,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 51.19999999999999,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 80
+        },
+        {
+          "x": 291.2,
+          "y": 320
+        },
+        {
+          "x": 51.19999999999999,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "right",
+      "split": "development",
+      "index": 90,
+      "ms": 9.5,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 108.80000000000001,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 108.80000000000001,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 80
+        },
+        {
+          "x": 348.8,
+          "y": 320
+        },
+        {
+          "x": 108.80000000000001,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "up",
+      "split": "development",
+      "index": 91,
+      "ms": 10,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 51.19999999999999,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 51.19999999999999
+        },
+        {
+          "x": 320,
+          "y": 291.2
+        },
+        {
+          "x": 80,
+          "y": 291.2
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "down",
+      "split": "development",
+      "index": 92,
+      "ms": 9.5,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 108.80000000000001,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 108.80000000000001
+        },
+        {
+          "x": 320,
+          "y": 348.8
+        },
+        {
+          "x": 80,
+          "y": 348.8
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "small",
+      "split": "development",
+      "index": 93,
+      "ms": 8.899999976158142,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 104,
+        "y": 104,
+        "w": 192,
+        "h": 192
+      },
+      "corners": [
+        {
+          "x": 104,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 104
+        },
+        {
+          "x": 296,
+          "y": 296
+        },
+        {
+          "x": 104,
+          "y": 296
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "large",
+      "split": "development",
+      "index": 94,
+      "ms": 13.099999904632568,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 54.5,
+        "y": 54.5,
+        "w": 292,
+        "h": 292
+      },
+      "corners": [
+        {
+          "x": 54.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 54.5
+        },
+        {
+          "x": 346.5,
+          "y": 346.5
+        },
+        {
+          "x": 54.5,
+          "y": 346.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate-15",
+      "split": "development",
+      "index": 95,
+      "ms": 13,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 51.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 284.5
+        },
+        {
+          "x": 116.5,
+          "y": 349.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate-10",
+      "split": "development",
+      "index": 96,
+      "ms": 12.399999976158142,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 59.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 299.5
+        },
+        {
+          "x": 101.5,
+          "y": 341.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate-5",
+      "split": "development",
+      "index": 97,
+      "ms": 12.099999904632568,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 311.5
+        },
+        {
+          "x": 89.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate5",
+      "split": "development",
+      "index": 98,
+      "ms": 11.899999976158142,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 69.5,
+        "w": 262,
+        "h": 262
+      },
+      "corners": [
+        {
+          "x": 89.5,
+          "y": 69.5
+        },
+        {
+          "x": 331.5,
+          "y": 89.5
+        },
+        {
+          "x": 311.5,
+          "y": 331.5
+        },
+        {
+          "x": 69.5,
+          "y": 311.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7999999523162842,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate10",
+      "split": "development",
+      "index": 99,
+      "ms": 12.599999904632568,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 59.5,
+        "w": 282,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 101.5,
+          "y": 59.5
+        },
+        {
+          "x": 341.5,
+          "y": 101.5
+        },
+        {
+          "x": 299.5,
+          "y": 341.5
+        },
+        {
+          "x": 59.5,
+          "y": 299.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "rotate15",
+      "split": "development",
+      "index": 100,
+      "ms": 11.400000095367432,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 51.5,
+        "y": 51.5,
+        "w": 298,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 116.5,
+          "y": 51.5
+        },
+        {
+          "x": 349.5,
+          "y": 116.5
+        },
+        {
+          "x": 284.5,
+          "y": 349.5
+        },
+        {
+          "x": 51.5,
+          "y": 284.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5999999046325684,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "perspective",
+      "split": "development",
+      "index": 101,
+      "ms": 10,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 46.5,
+        "y": 65.5,
+        "w": 264,
+        "h": 266
+      },
+      "corners": [
+        {
+          "x": 88.5,
+          "y": 65.5
+        },
+        {
+          "x": 310.5,
+          "y": 102.5
+        },
+        {
+          "x": 308.5,
+          "y": 327.5
+        },
+        {
+          "x": 46.5,
+          "y": 331.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "blur",
+      "split": "development",
+      "index": 102,
+      "ms": 9.899999976158142,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "noise",
+      "split": "development",
+      "index": 103,
+      "ms": 17.399999976158142,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 8.100000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "dark",
+      "split": "development",
+      "index": 104,
+      "ms": 9.199999928474426,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "cast",
+      "split": "development",
+      "index": 105,
+      "ms": 8.899999976158142,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "saturation",
+      "split": "development",
+      "index": 106,
+      "ms": 8.700000047683716,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "hue",
+      "split": "development",
+      "index": 107,
+      "ms": 8.799999952316284,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "blank",
+      "split": "development",
+      "index": 108,
+      "ms": 4.100000023841858,
+      "decoded": null,
+      "error": "no-region",
+      "score": 0,
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "corrupt",
+      "split": "development",
+      "index": 109,
+      "ms": 10.700000047683716,
+      "decoded": null,
+      "error": "チェックサム不一致 (95 != d7)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "x",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 110,
+      "ms": 5,
+      "decoded": "x",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 111,
+      "ms": 5.199999928474426,
+      "decoded": "xx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 112,
+      "ms": 4.600000023841858,
+      "decoded": "xxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 113,
+      "ms": 4.699999928474426,
+      "decoded": "xxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.4000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 114,
+      "ms": 5.799999952316284,
+      "decoded": "xxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.4000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 115,
+      "ms": 5.200000047683716,
+      "decoded": "xxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 116,
+      "ms": 5.099999904632568,
+      "decoded": "xxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.4000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 117,
+      "ms": 5.5,
+      "decoded": "xxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 118,
+      "ms": 5.799999952316284,
+      "decoded": "xxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 119,
+      "ms": 5.899999976158142,
+      "decoded": "xxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 120,
+      "ms": 7.399999976158142,
+      "decoded": "xxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 121,
+      "ms": 5.200000047683716,
+      "decoded": "xxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 122,
+      "ms": 5.799999952316284,
+      "decoded": "xxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 123,
+      "ms": 13.900000095367432,
+      "decoded": "xxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.799999952316284,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 124,
+      "ms": 7.799999952316284,
+      "decoded": "xxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 125,
+      "ms": 6.400000095367432,
+      "decoded": "xxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 126,
+      "ms": 6.399999976158142,
+      "decoded": "xxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 127,
+      "ms": 6.400000095367432,
+      "decoded": "xxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5999999046325684,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 128,
+      "ms": 6.900000095367432,
+      "decoded": "xxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.6999999284744263,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 129,
+      "ms": 6.199999928474426,
+      "decoded": "xxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 130,
+      "ms": 6.600000023841858,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 131,
+      "ms": 7.899999976158142,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 132,
+      "ms": 7.099999904632568,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 133,
+      "ms": 6.700000047683716,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 134,
+      "ms": 7.399999976158142,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 135,
+      "ms": 6.900000095367432,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5999999046325684,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 136,
+      "ms": 7.200000047683716,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 137,
+      "ms": 7.300000071525574,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 138,
+      "ms": 8.399999976158142,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 139,
+      "ms": 7.199999928474426,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 140,
+      "ms": 7.399999976158142,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 141,
+      "ms": 9.399999976158142,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 142,
+      "ms": 7.5,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 143,
+      "ms": 7.200000047683716,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 144,
+      "ms": 8.299999952316284,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 145,
+      "ms": 13.300000071525574,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 9.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 146,
+      "ms": 8.300000071525574,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 147,
+      "ms": 9.199999928474426,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 148,
+      "ms": 7.899999976158142,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.4000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 149,
+      "ms": 8.199999928474426,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 150,
+      "ms": 10.199999928474426,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 151,
+      "ms": 10.899999976158142,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7999999523162842,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 152,
+      "ms": 10.5,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 153,
+      "ms": 10.799999952316284,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 154,
+      "ms": 9.5,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 4.200000047683716,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 155,
+      "ms": 10.5,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 156,
+      "ms": 10,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "condition": "plain",
+      "split": "capacity",
+      "index": 157,
+      "ms": 9.400000095367432,
+      "decoded": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "未知の画像です",
+      "condition": "rotate7",
+      "split": "holdout",
+      "index": 158,
+      "ms": 9.199999928474426,
+      "decoded": "未知の画像です",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 65.5,
+        "y": 65.5,
+        "w": 270,
+        "h": 270
+      },
+      "corners": [
+        {
+          "x": 94.5,
+          "y": 65.5
+        },
+        {
+          "x": 335.5,
+          "y": 94.5
+        },
+        {
+          "x": 306.5,
+          "y": 335.5
+        },
+        {
+          "x": 65.5,
+          "y": 306.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.4000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "未知の画像です",
+      "condition": "rotate-12",
+      "split": "holdout",
+      "index": 159,
+      "ms": 9.699999928474426,
+      "decoded": "未知の画像です",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 56.5,
+        "y": 56.5,
+        "w": 288,
+        "h": 288
+      },
+      "corners": [
+        {
+          "x": 56.5,
+          "y": 106.5
+        },
+        {
+          "x": 294.5,
+          "y": 56.5
+        },
+        {
+          "x": 344.5,
+          "y": 294.5
+        },
+        {
+          "x": 106.5,
+          "y": 344.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "未知の画像です",
+      "condition": "held-perspective",
+      "split": "holdout",
+      "index": 160,
+      "ms": 10.199999928474426,
+      "decoded": "未知の画像です",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 39.5,
+        "w": 262,
+        "h": 270
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 88.5
+        },
+        {
+          "x": 329.5,
+          "y": 39.5
+        },
+        {
+          "x": 331.5,
+          "y": 305.5
+        },
+        {
+          "x": 106.5,
+          "y": 309.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "未知の画像です",
+      "condition": "held-combined",
+      "split": "holdout",
+      "index": 161,
+      "ms": 10,
+      "decoded": "未知の画像です",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 82.5,
+        "y": 49.5,
+        "w": 256,
+        "h": 256
+      },
+      "corners": [
+        {
+          "x": 126.5,
+          "y": 49.5
+        },
+        {
+          "x": 338.5,
+          "y": 102.5
+        },
+        {
+          "x": 299.5,
+          "y": 305.5
+        },
+        {
+          "x": 82.5,
+          "y": 275.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://test.invalid/holdout",
+      "condition": "rotate7",
+      "split": "holdout",
+      "index": 162,
+      "ms": 9.600000023841858,
+      "decoded": "https://test.invalid/holdout",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 65.5,
+        "y": 65.5,
+        "w": 270,
+        "h": 270
+      },
+      "corners": [
+        {
+          "x": 94.5,
+          "y": 65.5
+        },
+        {
+          "x": 335.5,
+          "y": 94.5
+        },
+        {
+          "x": 306.5,
+          "y": 335.5
+        },
+        {
+          "x": 65.5,
+          "y": 306.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://test.invalid/holdout",
+      "condition": "rotate-12",
+      "split": "holdout",
+      "index": 163,
+      "ms": 11.5,
+      "decoded": "https://test.invalid/holdout",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 56.5,
+        "y": 56.5,
+        "w": 288,
+        "h": 288
+      },
+      "corners": [
+        {
+          "x": 56.5,
+          "y": 106.5
+        },
+        {
+          "x": 294.5,
+          "y": 56.5
+        },
+        {
+          "x": 344.5,
+          "y": 294.5
+        },
+        {
+          "x": 106.5,
+          "y": 344.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7999999523162842,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://test.invalid/holdout",
+      "condition": "held-perspective",
+      "split": "holdout",
+      "index": 164,
+      "ms": 15.700000047683716,
+      "decoded": "https://test.invalid/holdout",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 39.5,
+        "w": 262,
+        "h": 270
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 88.5
+        },
+        {
+          "x": 329.5,
+          "y": 39.5
+        },
+        {
+          "x": 331.5,
+          "y": 305.5
+        },
+        {
+          "x": 106.5,
+          "y": 309.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://test.invalid/holdout",
+      "condition": "held-combined",
+      "split": "holdout",
+      "index": 165,
+      "ms": 11.300000071525574,
+      "decoded": "https://test.invalid/holdout",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 82.5,
+        "y": 49.5,
+        "w": 256,
+        "h": 256
+      },
+      "corners": [
+        {
+          "x": 126.5,
+          "y": 49.5
+        },
+        {
+          "x": 338.5,
+          "y": 102.5
+        },
+        {
+          "x": 299.5,
+          "y": 305.5
+        },
+        {
+          "x": 82.5,
+          "y": 275.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.6999999284744263,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "condition": "rotate7",
+      "split": "holdout",
+      "index": 166,
+      "ms": 11.600000023841858,
+      "decoded": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 65.5,
+        "y": 65.5,
+        "w": 270,
+        "h": 270
+      },
+      "corners": [
+        {
+          "x": 94.5,
+          "y": 65.5
+        },
+        {
+          "x": 335.5,
+          "y": 94.5
+        },
+        {
+          "x": 306.5,
+          "y": 335.5
+        },
+        {
+          "x": 65.5,
+          "y": 306.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "condition": "rotate-12",
+      "split": "holdout",
+      "index": 167,
+      "ms": 13.699999928474426,
+      "decoded": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 56.5,
+        "y": 56.5,
+        "w": 288,
+        "h": 288
+      },
+      "corners": [
+        {
+          "x": 56.5,
+          "y": 106.5
+        },
+        {
+          "x": 294.5,
+          "y": 56.5
+        },
+        {
+          "x": 344.5,
+          "y": 294.5
+        },
+        {
+          "x": 106.5,
+          "y": 344.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.100000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "condition": "held-perspective",
+      "split": "holdout",
+      "index": 168,
+      "ms": 11.400000095367432,
+      "decoded": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 39.5,
+        "w": 262,
+        "h": 270
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 88.5
+        },
+        {
+          "x": 329.5,
+          "y": 39.5
+        },
+        {
+          "x": 331.5,
+          "y": 305.5
+        },
+        {
+          "x": 106.5,
+          "y": 309.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "condition": "held-combined",
+      "split": "holdout",
+      "index": 169,
+      "ms": 12.299999952316284,
+      "decoded": "B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!B7q!",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 82.5,
+        "y": 49.5,
+        "w": 256,
+        "h": 256
+      },
+      "corners": [
+        {
+          "x": 126.5,
+          "y": 49.5
+        },
+        {
+          "x": 338.5,
+          "y": 102.5
+        },
+        {
+          "x": 299.5,
+          "y": 305.5
+        },
+        {
+          "x": 82.5,
+          "y": 275.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/0",
+      "condition": "sealed-0",
+      "split": "final-holdout",
+      "index": 170,
+      "ms": 12.800000071525574,
+      "decoded": "https://example.net/0",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 43.5,
+        "y": 62.5,
+        "w": 293,
+        "h": 278
+      },
+      "corners": [
+        {
+          "x": 43.5,
+          "y": 74.5
+        },
+        {
+          "x": 319.5,
+          "y": 62.5
+        },
+        {
+          "x": 336.5,
+          "y": 314.5
+        },
+        {
+          "x": 77.5,
+          "y": 340.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.6999999284744263,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価1",
+      "condition": "sealed-1",
+      "split": "final-holdout",
+      "index": 171,
+      "ms": 9.799999952316284,
+      "decoded": "最終評価1",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 38.5,
+        "y": 49.5,
+        "w": 301,
+        "h": 300
+      },
+      "corners": [
+        {
+          "x": 38.5,
+          "y": 85.5
+        },
+        {
+          "x": 307.5,
+          "y": 49.5
+        },
+        {
+          "x": 339.5,
+          "y": 327.5
+        },
+        {
+          "x": 62.5,
+          "y": 349.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.3000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/2",
+      "condition": "sealed-2",
+      "split": "final-holdout",
+      "index": 172,
+      "ms": 17.899999976158142,
+      "decoded": null,
+      "error": "不正なバイト値",
+      "score": 16,
+      "rect": {
+        "x": 103.5,
+        "y": 108.5,
+        "w": 214,
+        "h": 214
+      },
+      "corners": [
+        {
+          "x": 103.5,
+          "y": 112.5
+        },
+        {
+          "x": 281.5,
+          "y": 108.5
+        },
+        {
+          "x": 317.5,
+          "y": 291.5
+        },
+        {
+          "x": 112.5,
+          "y": 322.5
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価3",
+      "condition": "sealed-3",
+      "split": "final-holdout",
+      "index": 173,
+      "ms": 20.600000023841858,
+      "decoded": null,
+      "error": "チェックサム不一致 (a5 != 0)",
+      "score": 12,
+      "rect": {
+        "x": 92,
+        "y": 120.80000000000001,
+        "w": 216,
+        "h": 216
+      },
+      "corners": [
+        {
+          "x": 92,
+          "y": 120.80000000000001
+        },
+        {
+          "x": 308,
+          "y": 120.80000000000001
+        },
+        {
+          "x": 308,
+          "y": 336.8
+        },
+        {
+          "x": 92,
+          "y": 336.8
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/4",
+      "condition": "sealed-4",
+      "split": "final-holdout",
+      "index": 174,
+      "ms": 10.100000023841858,
+      "decoded": "https://example.net/4",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 84.5,
+        "w": 233,
+        "h": 229
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 114.5
+        },
+        {
+          "x": 283.5,
+          "y": 84.5
+        },
+        {
+          "x": 302.5,
+          "y": 303.5
+        },
+        {
+          "x": 94.5,
+          "y": 313.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価5",
+      "condition": "sealed-5",
+      "split": "final-holdout",
+      "index": 175,
+      "ms": 8.700000047683716,
+      "decoded": "最終評価5",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 87.5,
+        "y": 98.5,
+        "w": 242,
+        "h": 239
+      },
+      "corners": [
+        {
+          "x": 87.5,
+          "y": 107.5
+        },
+        {
+          "x": 302.5,
+          "y": 98.5
+        },
+        {
+          "x": 329.5,
+          "y": 302.5
+        },
+        {
+          "x": 107.5,
+          "y": 337.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/6",
+      "condition": "sealed-6",
+      "split": "final-holdout",
+      "index": 176,
+      "ms": 10.299999952316284,
+      "decoded": "https://example.net/6",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80.5,
+        "y": 97.5,
+        "w": 250,
+        "h": 246
+      },
+      "corners": [
+        {
+          "x": 80.5,
+          "y": 114.5
+        },
+        {
+          "x": 299.5,
+          "y": 97.5
+        },
+        {
+          "x": 330.5,
+          "y": 316.5
+        },
+        {
+          "x": 91.5,
+          "y": 343.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7999999523162842,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価7",
+      "condition": "sealed-7",
+      "split": "final-holdout",
+      "index": 177,
+      "ms": 8.699999928474426,
+      "decoded": "最終評価7",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 54.5,
+        "y": 70.5,
+        "w": 254,
+        "h": 257
+      },
+      "corners": [
+        {
+          "x": 54.5,
+          "y": 101.5
+        },
+        {
+          "x": 302.5,
+          "y": 70.5
+        },
+        {
+          "x": 308.5,
+          "y": 315.5
+        },
+        {
+          "x": 90.5,
+          "y": 327.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/8",
+      "condition": "sealed-8",
+      "split": "final-holdout",
+      "index": 178,
+      "ms": 11,
+      "decoded": "https://example.net/8",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 74.5,
+        "y": 87.5,
+        "w": 265,
+        "h": 266
+      },
+      "corners": [
+        {
+          "x": 74.5,
+          "y": 91.5
+        },
+        {
+          "x": 323.5,
+          "y": 87.5
+        },
+        {
+          "x": 339.5,
+          "y": 305.5
+        },
+        {
+          "x": 107.5,
+          "y": 353.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.6999999284744263,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価9",
+      "condition": "sealed-9",
+      "split": "final-holdout",
+      "index": 179,
+      "ms": 8.5,
+      "decoded": "最終評価9",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 67.5,
+        "y": 88.5,
+        "w": 273,
+        "h": 269
+      },
+      "corners": [
+        {
+          "x": 67.5,
+          "y": 100.5
+        },
+        {
+          "x": 315.5,
+          "y": 88.5
+        },
+        {
+          "x": 340.5,
+          "y": 327.5
+        },
+        {
+          "x": 87.5,
+          "y": 357.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.399999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/10",
+      "condition": "sealed-10",
+      "split": "final-holdout",
+      "index": 180,
+      "ms": 10.900000095367432,
+      "decoded": "https://example.net/10",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 59.5,
+        "y": 79.5,
+        "w": 284,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 59.5,
+          "y": 108.5
+        },
+        {
+          "x": 305.5,
+          "y": 79.5
+        },
+        {
+          "x": 343.5,
+          "y": 337.5
+        },
+        {
+          "x": 71.5,
+          "y": 361.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価11",
+      "condition": "sealed-11",
+      "split": "final-holdout",
+      "index": 181,
+      "ms": 9.699999928474426,
+      "decoded": "最終評価11",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 52.5,
+        "y": 75.5,
+        "w": 294,
+        "h": 290
+      },
+      "corners": [
+        {
+          "x": 52.5,
+          "y": 79.5
+        },
+        {
+          "x": 340.5,
+          "y": 75.5
+        },
+        {
+          "x": 346.5,
+          "y": 325.5
+        },
+        {
+          "x": 99.5,
+          "y": 365.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/12",
+      "condition": "sealed-12",
+      "split": "final-holdout",
+      "index": 182,
+      "ms": 12.199999928474426,
+      "decoded": "https://example.net/12",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 50.5,
+        "y": 70.5,
+        "w": 295,
+        "h": 299
+      },
+      "corners": [
+        {
+          "x": 50.5,
+          "y": 90.5
+        },
+        {
+          "x": 331.5,
+          "y": 70.5
+        },
+        {
+          "x": 345.5,
+          "y": 339.5
+        },
+        {
+          "x": 83.5,
+          "y": 369.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.9000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価13",
+      "condition": "sealed-13",
+      "split": "final-holdout",
+      "index": 183,
+      "ms": 17.09999990463257,
+      "decoded": null,
+      "error": "チェックサム不一致 (a5 != 0)",
+      "score": 13,
+      "rect": {
+        "x": 104,
+        "y": 132.8,
+        "w": 192,
+        "h": 192
+      },
+      "corners": [
+        {
+          "x": 104,
+          "y": 132.8
+        },
+        {
+          "x": 296,
+          "y": 132.8
+        },
+        {
+          "x": 296,
+          "y": 324.8
+        },
+        {
+          "x": 104,
+          "y": 324.8
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/14",
+      "condition": "sealed-14",
+      "split": "final-holdout",
+      "index": 184,
+      "ms": 13.099999904632568,
+      "decoded": null,
+      "error": "不正な長さ: 194",
+      "score": 14,
+      "rect": {
+        "x": 71.02647422464999,
+        "y": 80.90344657023002,
+        "w": 214.0430590233529,
+        "h": 225.15388938604343
+      },
+      "corners": [
+        {
+          "x": 71.02647422464999,
+          "y": 83.98446790586893
+        },
+        {
+          "x": 228.86622944369572,
+          "y": 80.90344657023002
+        },
+        {
+          "x": 285.06953324800287,
+          "y": 271.90697896680206
+        },
+        {
+          "x": 73.07647121485692,
+          "y": 306.05733595627345
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価15",
+      "condition": "sealed-15",
+      "split": "final-holdout",
+      "index": 185,
+      "ms": 12.300000071525574,
+      "decoded": null,
+      "error": "不正な長さ: 131",
+      "score": 15,
+      "rect": {
+        "x": 84.80000000000001,
+        "y": 70.4,
+        "w": 288,
+        "h": 288
+      },
+      "corners": [
+        {
+          "x": 84.80000000000001,
+          "y": 70.4
+        },
+        {
+          "x": 372.8,
+          "y": 70.4
+        },
+        {
+          "x": 372.8,
+          "y": 358.4
+        },
+        {
+          "x": 84.80000000000001,
+          "y": 358.4
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/16",
+      "condition": "sealed-16",
+      "split": "final-holdout",
+      "index": 186,
+      "ms": 9.300000071525574,
+      "decoded": "https://example.net/16",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 76.5,
+        "y": 60.5,
+        "w": 240,
+        "h": 235
+      },
+      "corners": [
+        {
+          "x": 76.5,
+          "y": 83.5
+        },
+        {
+          "x": 301.5,
+          "y": 60.5
+        },
+        {
+          "x": 316.5,
+          "y": 282.5
+        },
+        {
+          "x": 100.5,
+          "y": 295.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価17",
+      "condition": "sealed-17",
+      "split": "final-holdout",
+      "index": 187,
+      "ms": 10.5,
+      "decoded": "最終評価17",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 49.5,
+        "y": 70.5,
+        "w": 249,
+        "h": 247
+      },
+      "corners": [
+        {
+          "x": 49.5,
+          "y": 78.5
+        },
+        {
+          "x": 276.5,
+          "y": 70.5
+        },
+        {
+          "x": 298.5,
+          "y": 282.5
+        },
+        {
+          "x": 68.5,
+          "y": 317.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.899999976158142,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/18",
+      "condition": "sealed-18",
+      "split": "final-holdout",
+      "index": 188,
+      "ms": 12.399999976158142,
+      "decoded": "https://example.net/18",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 87.5,
+        "y": 67.5,
+        "w": 256,
+        "h": 256
+      },
+      "corners": [
+        {
+          "x": 87.5,
+          "y": 82.5
+        },
+        {
+          "x": 311.5,
+          "y": 67.5
+        },
+        {
+          "x": 343.5,
+          "y": 296.5
+        },
+        {
+          "x": 96.5,
+          "y": 323.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価19",
+      "condition": "sealed-19",
+      "split": "final-holdout",
+      "index": 189,
+      "ms": 9.700000047683716,
+      "decoded": "最終評価19",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 62.5,
+        "y": 42.5,
+        "w": 264,
+        "h": 260
+      },
+      "corners": [
+        {
+          "x": 62.5,
+          "y": 73.5
+        },
+        {
+          "x": 315.5,
+          "y": 42.5
+        },
+        {
+          "x": 326.5,
+          "y": 294.5
+        },
+        {
+          "x": 95.5,
+          "y": 302.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/20",
+      "condition": "sealed-20",
+      "split": "final-holdout",
+      "index": 190,
+      "ms": 10.299999952316284,
+      "decoded": "https://example.net/20",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 35.5,
+        "y": 59.5,
+        "w": 273,
+        "h": 274
+      },
+      "corners": [
+        {
+          "x": 35.5,
+          "y": 63.5
+        },
+        {
+          "x": 292.5,
+          "y": 59.5
+        },
+        {
+          "x": 308.5,
+          "y": 293.5
+        },
+        {
+          "x": 64.5,
+          "y": 333.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価21",
+      "condition": "sealed-21",
+      "split": "final-holdout",
+      "index": 191,
+      "ms": 9.5,
+      "decoded": "最終評価21",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 76.5,
+        "y": 55.5,
+        "w": 278,
+        "h": 282
+      },
+      "corners": [
+        {
+          "x": 76.5,
+          "y": 72.5
+        },
+        {
+          "x": 327.5,
+          "y": 55.5
+        },
+        {
+          "x": 354.5,
+          "y": 305.5
+        },
+        {
+          "x": 92.5,
+          "y": 337.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "https://example.net/22",
+      "condition": "sealed-22",
+      "split": "final-holdout",
+      "index": 192,
+      "ms": 10.799999952316284,
+      "decoded": "https://example.net/22",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 69.5,
+        "y": 51.5,
+        "w": 286,
+        "h": 290
+      },
+      "corners": [
+        {
+          "x": 69.5,
+          "y": 80.5
+        },
+        {
+          "x": 318.5,
+          "y": 51.5
+        },
+        {
+          "x": 355.5,
+          "y": 324.5
+        },
+        {
+          "x": 76.5,
+          "y": 341.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.7000000476837158,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "最終評価23",
+      "condition": "sealed-23",
+      "split": "final-holdout",
+      "index": 193,
+      "ms": 14.5,
+      "decoded": "最終評価23",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 14.5,
+        "y": 47.5,
+        "w": 304,
+        "h": 298
+      },
+      "corners": [
+        {
+          "x": 14.5,
+          "y": 51.5
+        },
+        {
+          "x": 309.5,
+          "y": 47.5
+        },
+        {
+          "x": 318.5,
+          "y": 304.5
+        },
+        {
+          "x": 60.5,
+          "y": 345.5
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 5.799999952316284,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "very-dark",
+      "split": "stress",
+      "index": 194,
+      "ms": 4.600000023841858,
+      "decoded": null,
+      "error": "no-region",
+      "score": 0,
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "severe-noise",
+      "split": "stress",
+      "index": 195,
+      "ms": 70.70000004768372,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "severe-blur",
+      "split": "stress",
+      "index": 196,
+      "ms": 65.20000004768372,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.5999999046325684,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "occlusion",
+      "split": "stress",
+      "index": 197,
+      "ms": 5,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.6999999284744263,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "glare",
+      "split": "stress",
+      "index": 198,
+      "ms": 5.600000023841858,
+      "decoded": "A",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.8000000715255737,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "A",
+      "condition": "clutter",
+      "split": "stress",
+      "index": 199,
+      "ms": 32.39999997615814,
+      "decoded": null,
+      "error": "不正な長さ: 180",
+      "score": 14,
+      "rect": {
+        "x": 56,
+        "y": 84.80000000000001,
+        "w": 288,
+        "h": 288
+      },
+      "corners": [
+        {
+          "x": 56,
+          "y": 84.80000000000001
+        },
+        {
+          "x": 344,
+          "y": 84.80000000000001
+        },
+        {
+          "x": 344,
+          "y": 372.8
+        },
+        {
+          "x": 56,
+          "y": 372.8
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "very-dark",
+      "split": "stress",
+      "index": 200,
+      "ms": 7.5,
+      "decoded": null,
+      "error": "no-region",
+      "score": 0,
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "severe-noise",
+      "split": "stress",
+      "index": 201,
+      "ms": 64.70000004768372,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 2.299999952316284,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "severe-blur",
+      "split": "stress",
+      "index": 202,
+      "ms": 8.5,
+      "decoded": "日本語の検証",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.600000023841858,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "occlusion",
+      "split": "stress",
+      "index": 203,
+      "ms": 13.399999976158142,
+      "decoded": null,
+      "error": "チェックサム不一致 (4f != 87)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "glare",
+      "split": "stress",
+      "index": 204,
+      "ms": 43.700000047683716,
+      "decoded": null,
+      "error": "チェックサム不一致 (8f != 87)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "日本語の検証",
+      "condition": "clutter",
+      "split": "stress",
+      "index": 205,
+      "ms": 72.10000002384186,
+      "decoded": null,
+      "error": "不正な長さ: 183",
+      "score": 14,
+      "rect": {
+        "x": 56,
+        "y": 84.80000000000001,
+        "w": 288,
+        "h": 288
+      },
+      "corners": [
+        {
+          "x": 56,
+          "y": 84.80000000000001
+        },
+        {
+          "x": 344,
+          "y": 84.80000000000001
+        },
+        {
+          "x": 344,
+          "y": 372.8
+        },
+        {
+          "x": 56,
+          "y": 372.8
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "very-dark",
+      "split": "stress",
+      "index": 206,
+      "ms": 6,
+      "decoded": null,
+      "error": "no-region",
+      "score": 0,
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "severe-noise",
+      "split": "stress",
+      "index": 207,
+      "ms": 67.20000004768372,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 3.799999952316284,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "severe-blur",
+      "split": "stress",
+      "index": 208,
+      "ms": 9.899999976158142,
+      "decoded": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.4000000953674316,
+      "success": true,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "occlusion",
+      "split": "stress",
+      "index": 209,
+      "ms": 21.899999976158142,
+      "decoded": null,
+      "error": "チェックサム不一致 (cf != 95)",
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "glare",
+      "split": "stress",
+      "index": 210,
+      "ms": 9.699999928474426,
+      "decoded": "ZZ\u0000ZZ\u0000ZZZ\u0000ZZZ\u0000ZZZ\u0000ZZZ\u0000ZZZ\u0000ZZZ\u0000ZZZZZZZZZZZZZZZZZZ",
+      "error": null,
+      "score": 16,
+      "rect": {
+        "x": 80,
+        "y": 80,
+        "w": 240,
+        "h": 240
+      },
+      "corners": [
+        {
+          "x": 80,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 80
+        },
+        {
+          "x": 320,
+          "y": 320
+        },
+        {
+          "x": 80,
+          "y": 320
+        }
+      ],
+      "confirmationFrames": 2,
+      "trackedMs": 1.4000000953674316,
+      "success": false,
+      "falsePositive": true
+    },
+    {
+      "text": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "condition": "clutter",
+      "split": "stress",
+      "index": 211,
+      "ms": 29.100000023841858,
+      "decoded": null,
+      "error": "不正なバイト値",
+      "score": 14,
+      "rect": {
+        "x": 89.6,
+        "y": 75.19999999999999,
+        "w": 192.00000000000003,
+        "h": 192
+      },
+      "corners": [
+        {
+          "x": 89.6,
+          "y": 75.19999999999999
+        },
+        {
+          "x": 281.6,
+          "y": 75.19999999999999
+        },
+        {
+          "x": 281.6,
+          "y": 267.2
+        },
+        {
+          "x": 89.6,
+          "y": 267.2
+        }
+      ],
+      "confirmationFrames": null,
+      "trackedMs": null,
+      "success": false,
+      "falsePositive": false
+    }
+  ],
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+  "memory": {
+    "usedJSHeapSize": 26698568
+  },
+  "version": "improved",
+  "timestamp": "2026-10-26T10:01:45.987Z",
+  "browser": "156.0.4314.42",
+  "summary": {
+    "success": 187,
+    "total": 202,
+    "falsePositives": 1,
+    "meanMs": 13.240094338947872,
+    "medianMs": 9.5,
+    "p95Ms": 29.100000023841858
+  }
+}
