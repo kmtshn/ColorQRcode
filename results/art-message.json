@@ -1,0 +1,217 @@
+{
+  "checks": [
+    {
+      "name": "CRC32 reference and packet integrity",
+      "pass": true
+    },
+    {
+      "name": "optical ASCII",
+      "pass": true
+    },
+    {
+      "name": "optical Japanese",
+      "pass": true
+    },
+    {
+      "name": "optical URL",
+      "pass": true
+    },
+    {
+      "name": "optical capacity",
+      "pass": true
+    },
+    {
+      "name": "optical scene surround",
+      "pass": true
+    },
+    {
+      "name": "optical scene small",
+      "pass": true
+    },
+    {
+      "name": "optical scene rotate",
+      "pass": true
+    },
+    {
+      "name": "optical scene blur",
+      "pass": true
+    },
+    {
+      "name": "optical scene camera",
+      "pass": true
+    },
+    {
+      "name": "optical scene moving",
+      "pass": true
+    },
+    {
+      "name": "optical scene perspective",
+      "pass": true
+    },
+    {
+      "name": "optical scene low",
+      "pass": true
+    },
+    {
+      "name": "second illustration",
+      "pass": true
+    },
+    {
+      "name": "static image cannot complete transfer",
+      "pass": true
+    },
+    {
+      "name": "packet corruption is not accepted",
+      "pass": true
+    },
+    {
+      "name": "independent messages never combine and reset discards partial state",
+      "pass": true
+    },
+    {
+      "name": "markerless and unrelated frames do not decode",
+      "pass": true
+    },
+    {
+      "name": "local optical demo UI",
+      "pass": true
+    },
+    {
+      "name": "local image import and safe text output",
+      "pass": true
+    },
+    {
+      "name": "mode switch releases original ColorQR camera",
+      "pass": true
+    },
+    {
+      "name": "synthetic MediaStream to camera UI",
+      "pass": true
+    },
+    {
+      "name": "mode switch releases art camera",
+      "pass": true
+    },
+    {
+      "name": "late original camera permission cannot restart hidden mode",
+      "pass": true
+    },
+    {
+      "name": "late camera permission cannot restart hidden mode",
+      "pass": true
+    },
+    {
+      "name": "new mode loads offline through service worker",
+      "pass": true
+    }
+  ],
+  "measurements": [
+    {
+      "kind": "plain",
+      "bytes": 1,
+      "frames": 8,
+      "ms": 410.09999990463257,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "plain",
+      "bytes": 43,
+      "frames": 24,
+      "ms": 489.2999999523163,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "plain",
+      "bytes": 27,
+      "frames": 16,
+      "ms": 327.2999999523163,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "plain",
+      "bytes": 160,
+      "frames": 80,
+      "ms": 1357.6999998092651,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "surround",
+      "bytes": 39,
+      "frames": 24,
+      "ms": 399.10000014305115,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "small",
+      "bytes": 39,
+      "frames": 24,
+      "ms": 409.09999990463257,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "rotate",
+      "bytes": 39,
+      "frames": 24,
+      "ms": 468.5,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "blur",
+      "bytes": 39,
+      "frames": 24,
+      "ms": 429.7999999523163,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "camera",
+      "bytes": 39,
+      "frames": 24,
+      "ms": 1375.5999999046326,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "moving",
+      "bytes": 39,
+      "frames": 24,
+      "ms": 422.89999985694885,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "perspective",
+      "bytes": 39,
+      "frames": 24,
+      "ms": 1162.7999999523163,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "low",
+      "bytes": 39,
+      "frames": 24,
+      "ms": 394.10000014305115,
+      "success": true,
+      "markers": 4
+    },
+    {
+      "kind": "rotate",
+      "bytes": 27,
+      "frames": 16,
+      "ms": 279.2999999523163,
+      "success": true,
+      "markers": 4
+    }
+  ],
+  "browser": "156.0.4314.42",
+  "timestamp": "2026-10-26T13:11:00.850Z",
+  "errors": []
+}
