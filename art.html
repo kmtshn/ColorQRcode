@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>絵のメッセージ — 6ColorQR 実験室</title>
+<link rel="stylesheet" href="art.css">
+<script src="art-codec.js" defer></script><script src="art-ui.js" defer></script>
+</head>
+<body>
+<main>
+  <div class="intro"><span class="eyebrow">ART MESSAGE / 実験版</span><h1>この絵には、<br>言葉が入っています。</h1><p>絵の明暗の変化をカメラで集め、メッセージを復元します。<br>リンクやサーバーから文章を取得する仕組みではありません。</p></div>
+  <div class="switch" role="tablist" aria-label="絵のメッセージの操作">
+    <button id="sendTab" role="tab" aria-selected="true" aria-controls="sendPanel">絵に入れて送る</button>
+    <button id="receiveTab" role="tab" tabindex="-1" aria-selected="false" aria-controls="receivePanel">カメラで受け取る</button>
+  </div>
+  <section id="sendPanel" role="tabpanel" aria-labelledby="sendTab">
+    <div class="card composer">
+      <label for="message">絵に入れるメッセージ</label>
+      <textarea id="message" rows="3">この花の中に、メッセージが入っています。</textarea>
+      <div class="count"><span id="byteCount">0</span> / 160 バイト</div>
+      <div class="options"><label>絵柄<select id="theme"><option value="flower">花の手紙</option><option value="night">月と山</option></select></label><label class="upload">自分の画像<input id="imageFile" type="file" accept="image/png,image/jpeg,image/webp"></label></div>
+      <label class="strength" for="strength">変化の強さ <output id="strengthValue">16</output><input id="strength" type="range" min="16" max="40" value="16" step="4"></label>
+      <p class="hint">弱い変化ほど目立ちませんが、読み取りが難しくなります。画像はこの端末内だけで処理します。</p>
+      <div class="buttons"><button id="startSend" class="primary">この絵で送信を始める</button><button id="stopSend" disabled>停止</button></div>
+      <p id="sendStatus" class="status" role="status" aria-live="polite">まだ送信していません。</p>
+    </div>
+    <div class="stage" id="stage"><canvas id="artCanvas" width="600" height="600" aria-label="メッセージを送る絵"></canvas></div>
+    <div class="under-stage"><button id="fullscreen">絵を大きく表示</button><span id="frameStatus">静止プレビュー</span></div>
+    <p class="hint">送信を始めると明暗がゆっくり変わります。別の端末で「カメラで受け取る」を開き、四隅の目印を全て写してください。静止画の保存・印刷ではメッセージを受信できません。</p>
+    <details class="card"><summary>カメラなしで仕組みを試す</summary><p>この端末で表示画像の対を作り、同じ画像処理エンジンで復元します。実機カメラの確認とは別のデモです。</p><button id="localDemo">表示画像から復元を試す</button><p id="demoStatus" class="status" role="status"></p><pre id="demoResult"></pre></details>
+  </section>
+  <section id="receivePanel" role="tabpanel" aria-labelledby="receiveTab" hidden>
+    <div class="card"><h2>絵の四隅を写してください</h2><p>送信中の画面を撮影します。紙やスクリーンショットからは受信できません。撮影側のピントが合う距離で保持してください。</p>
+      <div class="camera"><video id="artVideo" playsinline muted autoplay></video><canvas id="overlay"></canvas><div class="camera-guide" aria-hidden="true"></div></div>
+      <div class="buttons"><button id="startReceive" class="primary">カメラを起動</button><button id="stopReceive" disabled>停止</button><button id="clearReceive">受信をクリア</button></div>
+      <p id="receiveStatus" class="status" role="status" aria-live="polite">カメラは停止しています。</p>
+      <progress id="progress" max="1" value="0" aria-label="受信した断片"></progress><span id="progressText">0 個の断片を受信</span>
+      <details><summary>受信の診断</summary><p id="diagnostics">まだフレームを取得していません。</p></details>
+    </div>
+    <div class="card result"><span class="eyebrow">MESSAGE</span><h2>絵から届いた言葉</h2><pre id="receivedText">まだ受信していません。</pre><button id="copyMessage" disabled>メッセージをコピー</button></div>
+  </section>
+  <p class="footnote">短文転送の試作です。暗さ・反射・手ぶれ・表示の色・モアレによって受信できない場合があります。実機での性能は未確認です。新規性や不可視性を保証するものではありません。</p>
+</main>
+</body></html>

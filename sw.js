@@ -1,10 +1,15 @@
 /* Service Worker for 6ColorQR PWA */
-const CACHE_NAME = '6colorqr-v4';
+const CACHE_NAME = '6colorqr-v5';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  './scanner.js'
+  './scanner.js',
+  './feature-mode.js',
+  './art.html',
+  './art.css',
+  './art-codec.js',
+  './art-ui.js'
 ];
 
 self.addEventListener('install', (event) => {
